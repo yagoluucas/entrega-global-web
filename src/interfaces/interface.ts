@@ -4,6 +4,7 @@ interface ecopontos{
 	cep: string,
 	endereco: string,
 	recebeGesso: string,
+	imagem: string,
     key?: number
 }
 

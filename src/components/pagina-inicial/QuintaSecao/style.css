@@ -1,0 +1,52 @@
+main section.quinta--secao {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 2rem;
+}
+
+main section.quinta--secao .primeira--parte section, main section.quinta--secao .segunda--parte{
+    background:#eee ;
+} 
+
+main section.quinta--secao .primeira--parte, main section.quinta--secao .segunda--parte {
+    max-width: 900px;
+}
+
+
+main section.quinta--secao .primeira--parte {
+    grid-column: 1 / span 5;
+}
+
+main section.quinta--secao .segunda--parte {
+    grid-column: 7 / -1;
+}
+
+main section.quinta--secao img {
+    width: 100%;
+}
+
+main section.quinta--secao .primeira--parte .cadastrar {
+    margin-bottom: 1rem;
+}
+
+main section.quinta--secao .primeira--parte img {
+    height: 200px;
+}
+
+main section.quinta--secao .segunda--parte img {
+    height: 530px;
+}
+
+main section.quinta--secao div.conteudo {
+    padding: 0.7rem 1rem;
+}
+
+main section.quinta--secao div.conteudo h2{
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+main section.quinta--secao div.conteudo p{
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}

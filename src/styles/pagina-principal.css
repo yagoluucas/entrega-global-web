@@ -1,3 +1,3 @@
-main.pagina--principal section:not(main.pagina--principal section:first-child){
+main.pagina--principal > section:not(main.pagina--principal section:first-child){
     padding: 6rem 3rem;
 }

@@ -26,10 +26,11 @@ export default function Coleta() {
 
 
     return (
-        data?.map((item, index) => {
+        data.map((item, index) => {
             const recebeGesso = item.recebeGesso ? "Sim" : "Não"
             return (
-                <CardEcopontos 
+                <CardEcopontos
+                imagem="/ecopontos/ecoponto.png"
                 key={index} 
                 ecoponto={item.ecoponto} 
                 endereco={item.endereco}
