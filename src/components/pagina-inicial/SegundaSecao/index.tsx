@@ -12,8 +12,8 @@ export default function SegundaSecao() {
             />
 
             <CardNoticia
-                tituloTexto="Como as algas marinhas podem acabar com a crise climática"
-                paragrafoTexto="Algas marinhas podem se tornar um mercado emergente em soluções ambientais"
+                tituloTexto="Algas marinhas podem diminuir a crise climática"
+                paragrafoTexto="Algas marinhas podem se tornar emergente em soluções ambientais"
                 linkBotao="https://umsoplaneta.globo.com/clima/noticia/2024/03/27/algas-marinhas-podem-se-tornar-um-mercado-emergente-em-solucoes-ambientais.ghtml"
                 altImagem="Homem navegando com uma canoa e algas ao fundo"
                 srcImagem="/pagina-inicial/algas-marinhas-noticia.webp"

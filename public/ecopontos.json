@@ -1,0 +1,745 @@
+[{
+	"ecoponto": "Vila Talarico",
+	"bairro": "Vila Talarico",
+	"cep": "03535-000",
+	"endereco": "Avenida Bernardino Brito Fonseca de Carvalho, nº 1.050",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Recanto dos Humildes",
+	"bairro": "Vila Perus",
+	"cep": "05211-200",
+	"endereco": "Rua Sales Gomes, nº 415",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Jardim Santa Fé",
+	"bairro": "Jardim Santa Fé (Zona Oeste)",
+	"cep": "05271-090",
+	"endereco": "Rua Salvador Albano nº156",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Pinheiros",
+	"bairro": "Cidade Monções",
+	"cep": "04571-200",
+	"endereco": "Praça do Cancioneiro, nº 15 (Baixos da Ponte Engenheiro Ary Torres)",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Anhaia Mello",
+	"bairro": "Vila Prudente",
+	"cep": "03156-210",
+	"endereco": "Rua da Prece, nº 296",
+	"recebeGesso": true
+}, {
+	"ecoponto": "São Lucas",
+	"bairro": "Parque Residencial Oratorio",
+	"cep": "03266-120",
+	"endereco": "Rua Florêncio Sanches, nº 307",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Vila Industrial",
+	"bairro": "Jardim Guairacá",
+	"cep": "03244-060",
+	"endereco": "Rua Lisa Ansorge, altura do nº 645",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Varre Vila",
+	"bairro": "União de Vila Nova",
+	"cep": "08072-050",
+	"endereco": "Rua Primeiro de Maio, defronte nº 106",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Vitória Popular",
+	"bairro": "Jardim São Carlos (Zona Leste)",
+	"cep": "08062-520",
+	"endereco": "Rua El Rey nº 508",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Jardim Helena",
+	"bairro": "Jardim Helena",
+	"cep": "08090-753",
+	"endereco": "Rua Cosme dos Santos, nº 110",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Jardim Romano",
+	"bairro": "Jardim Santa Margarida",
+	"cep": "08191-250",
+	"endereco": "Rua Duarte Martins Mourão, nº 400",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Jardim Lapena",
+	"bairro": "Jardim Nair",
+	"cep": "08071-130",
+	"endereco": "Rua Rafael Zimbard, altura do nº78",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Sapopemba",
+	"bairro": "Conjunto Habitacional Teotonio Vilela",
+	"cep": "03928-235",
+	"endereco": "Rua Francesco Usper, nº 550",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Vila Cardoso Franco",
+	"bairro": "Conjunto Residencial Sitio Oratório",
+	"cep": "03978-310",
+	"endereco": "Rua dos Vorás, nº 25",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Reynaldo José",
+	"bairro": "Jardim Ângela (Zona Leste)",
+	"cep": "03985-000",
+	"endereco": "Rua Silvestro Silvestre, nº 400",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Joaquim Catuna",
+	"bairro": "Fazenda da Juta",
+	"cep": "03977-417",
+	"endereco": "Rua Luca Conforti, nº210",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Glicério",
+	"bairro": "Liberdade",
+	"cep": "01517-100",
+	"endereco": "Praça Ministro Francisco Sá Carneiro, nº 6 (Baixos do Viaduto Glicério, acesso pela Avenida do Estado, 4434)",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Liberdade",
+	"bairro": "Bela Vista",
+	"cep": "01315-010",
+	"endereco": "Rua Jaceguai, nº 67, esquina com a Avenida Liberdade",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Armênia",
+	"bairro": "Luz",
+	"cep": "01102-030",
+	"endereco": "Rua General Carmona, nº 156",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Cambuci",
+	"bairro": "Vila Monumento",
+	"cep": "01552-001",
+	"endereco": "Avenida Dom Pedro I, nº 38",
+	"recebeGesso": true
+}, {
+	"ecoponto": "General Flores (Fora de Operação - Temporariamente)",
+	"bairro": "Bom Retiro",
+	"cep": "01129-010",
+	"endereco": "Rua General Flores, nº 10",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Bela Vista",
+	"bairro": "Bela Vista",
+	"cep": "01324-040",
+	"endereco": "Rua Quatorze de Julho, nº 59",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Vila Guilherme",
+	"bairro": "Vila Guilherme",
+	"cep": "02055-001",
+	"endereco": "Rua José Bernardo Pinto, nº 1480",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Vila Sabrina",
+	"bairro": "Jardim Julieta",
+	"cep": "02161-160",
+	"endereco": "Avenida do Poeta, nº 931",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Vila Maria",
+	"bairro": "Jardim Andaraí",
+	"cep": "02168-150",
+	"endereco": "Rua Curuçá, nº 1.700",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Vila Mariana",
+	"bairro": "Vila Mariana",
+	"cep": "04120-020",
+	"endereco": "Rua Mauricio Francisco Klabin, nº37",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Saioa",
+	"bairro": "Vila Firmiano Pinto",
+	"cep": "04124-210",
+	"endereco": "Rua Mary Baida Salem, nº01",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Rubem Berta",
+	"bairro": "Indianópolis",
+	"cep": "04014-010",
+	"endereco": "Avenida Rubem Berta, 1100 (baixo do Viaduto Onze de Junho)",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Vila Madalena",
+	"bairro": "Vila Madalena",
+	"cep": "05433-000",
+	"endereco": "Rua Girassol, nº 15, esquina Rua Luís Murat",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Alto de Pinheiros",
+	"bairro": "Alto de Pinheiros",
+	"cep": "05463-080",
+	"endereco": "Praça Arcipreste Anselmo de Oliveira",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Cônego José Salomon",
+	"bairro": "Vila Portugal",
+	"cep": "02918-170",
+	"endereco": "Avenida. Cônego José Salomon, nº 861",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Vigário Godói",
+	"bairro": "Vila Zat",
+	"cep": "02976-080",
+	"endereco": "Rua Vigário Godói, nº 480",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Voith",
+	"bairro": "Parque Nações Unidas",
+	"cep": "02996-010",
+	"endereco": "Avenida Atílio Brugnoli, nº 489",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Alexios Jafet",
+	"bairro": "Jardim Ipanema (Zona Oeste)",
+	"cep": "05187-010",
+	"endereco": "Rua Alexios Jafet, nº 233",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Tucuruvi",
+	"bairro": "Barro Branco (Zona Norte)",
+	"cep": "02344-050",
+	"endereco": "Rua Eduardo Vicente Nasser, nº 519",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Santana",
+	"bairro": "Carandiru",
+	"cep": "02029-000",
+	"endereco": "Avenida Zaki Narchi, nº375",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Alceu Maynard de Araújo",
+	"bairro": "Vila Cruzeiro",
+	"cep": "04728-110",
+	"endereco": "Avenida Professor Alceu Maynard de Araújo, nº 330 - ao lado da Central de Triagem",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Vicente Rao",
+	"bairro": "Jardim Petrópolis",
+	"cep": "04636-000",
+	"endereco": "Avenida Vicente Rao, nº 308 sentido Diadema (Baixo do Viaduto José Diniz)",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Pedro Bueno",
+	"bairro": "Parque Jabaquara",
+	"cep": "04356-030",
+	"endereco": "Rua João de Lery, altura do nº 503",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Vitor Manzini",
+	"bairro": "Santo Amaro",
+	"cep": "04745-050",
+	"endereco": "Praça Dom Francisco de Sousa, nº 635",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Cipoaba",
+	"bairro": "Jardim Rodolfo Pirani",
+	"cep": "08310-260",
+	"endereco": "Rua Padre Luis de Siqueira, nº 947, com Avenida Rodolfo Pirani",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Iguatemi",
+	"bairro": "Parque Boa Esperança",
+	"cep": "08341-235",
+	"endereco": "Rua Francisco de Melo Palheta, nº1548",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Montalvania",
+	"bairro": "Jardim São Cristóvão",
+	"cep": "03930-095",
+	"endereco": "Rua Montalvania nº 195",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Lima Bonfante",
+	"bairro": "Jardim São Francisco",
+	"cep": "08390-260",
+	"endereco": "Rua Capitão-mor Lázaro da Costa, nº 251",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Imperador",
+	"bairro": "Jardim das Camélias",
+	"cep": "08050-420",
+	"endereco": "Avenida. Ribeirão Jacu, nº 201 (Baixo do Viaduto Jacu Pêssego)",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Carlito Maia",
+	"bairro": "Vila Itaim",
+	"cep": "08190-300",
+	"endereco": "Rua Domingos Fernandes Nobre, nº 109",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Pedro Nunes",
+	"bairro": "Jardim Pedro José Nunes",
+	"cep": "08061-540",
+	"endereco": "Rua da Polka, nº 100",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Itaqueruna",
+	"bairro": "Cidade Nova São Miguel",
+	"cep": "08042-550",
+	"endereco": "Rua Domitila d'Abril, nº 88",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Brás",
+	"bairro": "Mooca",
+	"cep": "03107-000",
+	"endereco": "Avenida Presidente Wilson, nº 1 (Baixo Viaduto Professor Alberto Mesquita de Carvalho)",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Mooca",
+	"bairro": "Belenzinho",
+	"cep": "03163-010",
+	"endereco": "Avenida Pires do Rio, nº 600 (Baixo Viaduto Bresser)",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Pari",
+	"bairro": "Pari",
+	"cep": "03028-001",
+	"endereco": "Avenida Carlos de Campos, nº 996 (defronte), esquina com Avenida Presidente Castelo Branco",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Belém",
+	"bairro": "Belenzinho",
+	"cep": "03062-030",
+	"endereco": "Rua Belarmino Matos, nº 26 (baixos do Viaduto Guadalajara)",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Vila Luisa",
+	"bairro": "Guaiúna",
+	"cep": "03631-230",
+	"endereco": "Praça Dante Maron, nº 92 (Baixos Viaduto Engenheiro Alberto Badra)",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Água Rasa",
+	"bairro": "Quarta Parada",
+	"cep": "03304-090",
+	"endereco": "Av. Salim Farah Maluf, nº 1500",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Mendes Caldeira",
+	"bairro": "Brás",
+	"cep": "03008-000",
+	"endereco": "Rua Monsenhor Andrade, nº 865",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Mooca ll",
+	"bairro": "Vila Regente Feijó",
+	"cep": "03343-000",
+	"endereco": "Rua Pantojo, nº 1.147",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Penha I",
+	"bairro": "Vila Esperança",
+	"cep": "03650-020",
+	"endereco": "Rua Doutor. Heládio, nº 104",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Tiquatira",
+	"bairro": "Jardim Jaú (Zona Leste)",
+	"cep": "03730-040",
+	"endereco": "Rua Amorim Diniz, nº 415",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Gamelinha",
+	"bairro": "Jardim Santo Antônio",
+	"cep": "03554-000",
+	"endereco": "Rua Morfeu, nº 25, esquina com Avenida Edgar dos Santos",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Vila Matilde",
+	"bairro": "Jardim Triana",
+	"cep": "03554-000",
+	"endereco": "Rua Mateus de Siqueira, nº 375, com Praça Leonildes Ramos Saigo",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Cangaíba",
+	"bairro": "Cangaíba",
+	"cep": "03721-080",
+	"endereco": "Rua Luciano Nogueira, altura do nº 241",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Franquinho",
+	"bairro": "Jardim Artur Alvim",
+	"cep": "03687-100",
+	"endereco": "Rua Praia de Mucuripe, nº 685",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Dalila",
+	"bairro": "Vila Dalila",
+	"cep": "03520-030",
+	"endereco": "Rua Inacio da Costa nº 740, esquina com a Avenida Aricanduva",
+	"recebeGesso": false
+}, {
+	"ecoponto": "COHAB Artur Alvim",
+	"bairro": "Conjunto Habitacional Padre Manoel da Nóbrega",
+	"cep": "03590-060",
+	"endereco": "Avenida. Padre Estanislau de Campos nº 56",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Pesqueiro",
+	"bairro": "Jardim Ida Guedes",
+	"cep": "08120-580",
+	"endereco": "Rua Caiuás, nº 18, esquina com a Avenida Itamerendiba",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Flamingo",
+	"bairro": "Vila Nova Curuçá",
+	"cep": "08031-240",
+	"endereco": "Rua Alexandre Dias Nogueira, nº353",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Itaim Paulista",
+	"bairro": "Itaim Paulista",
+	"cep": "08575-210",
+	"endereco": "Rua Barão de Almeida Galeão, altura do nº61",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Jardim Indaiá",
+	"bairro": "Jardim Indaiá",
+	"cep": "08143-030",
+	"endereco": "Rua Rossini Pinto, altura do nº 214",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Parque Guarani",
+	"bairro": "Parque Guarani",
+	"cep": "08235-620",
+	"endereco": "Rua Manuel Alves da Rocha, nº 584",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Oswaldo Valle Cordeiro",
+	"bairro": "Jardim Brasília (Zona Leste)",
+	"cep": "03584-000",
+	"endereco": "Av. Osvaldo Valle Cordeiro, nº 405",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Cidade Lider",
+	"bairro": "Jardim Marília",
+	"cep": "03579-150",
+	"endereco": "Rua Charles Manguin, nº 20",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Parque do Carmo",
+	"bairro": "Jardim Nossa Senhora do Carmo",
+	"cep": "08275-310",
+	"endereco": "Rua Machado Nunes, nº 95",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Corinthians",
+	"bairro": "Conjunto Residencial José Bonifácio",
+	"cep": "08253-230",
+	"endereco": "Rua Ana Perena, nº 155",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Caldeirão",
+	"bairro": "Vila Santa Teresinha",
+	"cep": "08247-080",
+	"endereco": "Rua Major Vitorino de Souza Rocha, altura do nº148",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Imigrantes",
+	"bairro": "Vila Guarani (Zona Sul)",
+	"cep": "04312-080",
+	"endereco": "Rua Opixe",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Jabaquara",
+	"bairro": "Vila Mira",
+	"cep": "04377-200",
+	"endereco": "Rua Jupatis, nº140",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Anselmo Machado",
+	"bairro": "Jaçanã",
+	"cep": "02273-011",
+	"endereco": "Avenida Paulo Lincoln do Valle Pontin, altura do nº 550",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Silvio Bittencourt",
+	"bairro": "Vila Albertina",
+	"cep": "02350-003",
+	"endereco": "Rua Maria Amália Lopes Azevedo, nº 4008",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Viaduto Antártica",
+	"bairro": "Parque Industrial Tomas Edson",
+	"cep": "01141-010",
+	"endereco": "Rua Robert Bosch (Baixos Viaduto Antártica)",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Vila Jaguara",
+	"bairro": "Vila Jaguara",
+	"cep": "05117-100",
+	"endereco": "Rua Agrestina, nº 189",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Piraporinha",
+	"bairro": "Jardim Tupã",
+	"cep": "04904-000",
+	"endereco": "Rua João de Abreu, nº326",
+	"recebeGesso": true
+}, {
+	"ecoponto": "São Luis",
+	"bairro": "Jardim Letícia",
+	"cep": "05820-220",
+	"endereco": "Rua Pedro Armani, nº 252",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Bresser",
+	"bairro": "Brás",
+	"cep": "03053-000",
+	"endereco": "Pça. Giuseppe Cesari, nº 54 (Baixo do Viaduto Bresser)",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Tatuapé",
+	"bairro": "Tatuapé",
+	"cep": "03076-000",
+	"endereco": "Avenida Salim Farah Maluf, nº 179, Praça Tito Lívio Ferreira (Central de Triagem)",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Alvarenga",
+	"bairro": "Balneário Mar Paulista",
+	"cep": "04467-000",
+	"endereco": "Estrada do Alvarenga, nº 2475",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Cupecê",
+	"bairro": "Jardim Itacolomi",
+	"cep": "04385-110",
+	"endereco": "Rua Anália Maria de Jesus, nº 130, Trav. Av. Cupecê",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Nascer do Sol",
+	"bairro": "Conjunto Habitacional Santa Etelvina II",
+	"cep": "08485-020",
+	"endereco": "Rua Nascer do Sol, nº 356",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Setor G",
+	"bairro": "Conjunto Habitacional Barro Branco II",
+	"cep": "08473-591",
+	"endereco": "Rua Alfonso Asturaro, altura do nº 600",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Inácio Monteiro",
+	"bairro": "Conjunto Habitacional Inácio Monteiro",
+	"cep": "08472-210",
+	"endereco": "Rua Regresso Feliz, nº 1190",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Jardim São Nicolau",
+	"bairro": "Vila União (Zona Leste)",
+	"cep": "03683-000",
+	"endereco": "Rua Agreste de Itabaiana, nº 590, esquina com a Rua Eduardo Kyioshi Shimuta",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Boturussu",
+	"bairro": "Parque Boturussu",
+	"cep": "03802-005",
+	"endereco": "Rua Nélio Batista Guimarães, nº 183",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Bandeirantes",
+	"bairro": "Itaberaba",
+	"cep": "02803-050",
+	"endereco": "Rua Itaiquara, nº 237",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Freguesia do Ó",
+	"bairro": "Vila União (Zona Norte)",
+	"cep": "02911-135",
+	"endereco": "Rua Sousa Filho, nº 690",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Vila Rica",
+	"bairro": "Vila Souza",
+	"cep": "02860-050",
+	"endereco": "Rua Jorge Mamede da Silva, nº 200",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Jardim São Paulo",
+	"bairro": "Conjunto Habitacional Juscelino Kubitschek",
+	"cep": "08465-000",
+	"endereco": "Rua Utaro Kanai, nº 374",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Guaiaponto",
+	"bairro": "Vila Santa Cruz (Zona Leste)",
+	"cep": "08411-010",
+	"endereco": "Rua da Passagem Funda, nº 250",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Lajeado",
+	"bairro": "Jardim Lajeado",
+	"cep": "08411-010",
+	"endereco": "Rua Isabela, nº405",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Padre Nildo do Amaral",
+	"bairro": "Vila Nova Curuçá",
+	"cep": "08032-650",
+	"endereco": "Rua Padre Nildo do Amaral Júnior, nº 900",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Tereza Cristina",
+	"bairro": "Vila Monumento",
+	"cep": "01553-000",
+	"endereco": "Rua Tereza Cristina, nº 10, esquina com Avenida do Estado",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Santa Cruz",
+	"bairro": "Vila Mariana",
+	"cep": "04122-000",
+	"endereco": "Rua Santa Cruz, nº 1452 (Baixo do Viaduto Santa Cruz)",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Vila das Mercês",
+	"bairro": "Saúde",
+	"cep": "04294-030",
+	"endereco": "Rua Italva, nº 86",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Comandante Taylor",
+	"bairro": "Ipiranga",
+	"cep": "04218-000",
+	"endereco": "Rua Comandante Taylor, nº 690 (Baixo do Viaduto Comandante Taylor)",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Moreira",
+	"bairro": "Jardim das Oliveiras",
+	"cep": "08111-430",
+	"endereco": "Rua João Batista de Godói, nº 1164",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Mãe Preta",
+	"bairro": "Vila Curuçá",
+	"cep": "08030-610",
+	"endereco": "Avenida Dama Entre Verdes, nº 21",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Ecoponto Bresser",
+	"bairro": "Brás",
+	"cep": "03053-020",
+	"endereco": "Praça Giuseppe Cesari, n°54 (Baixos do Viaduto Bresser)",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Viaduto Engenheiro Alberto Badra",
+	"bairro": "Aricanduva",
+	"cep": "03501-010",
+	"endereco": "Avenida Aricanduva, nº 200 - Praça Lúcia Mekhitarian (baixo do Viaduto Engenheiro Alberto Badra)",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Astarte",
+	"bairro": "Vila Carrão",
+	"cep": "03446-090",
+	"endereco": "Rua Astarte, nº 500",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Nova York",
+	"bairro": "Conjunto Habitacional Barreira Grande",
+	"cep": "03907-010",
+	"endereco": "Rua Amélia Vanso Magnoli, nº 480",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Aricanduva I",
+	"bairro": "Jardim Nice",
+	"cep": "03905-090",
+	"endereco": "Rua Professor Alzira de Oliveira Gilioli, nº 400",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Jardim Maria do Carmo",
+	"bairro": "Ferreira",
+	"cep": "05524-000",
+	"endereco": "Rua Caminho do Engenho, nº 800",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Jardim Jaqueline",
+	"bairro": "Vila Albano",
+	"cep": "05543-040",
+	"endereco": "Parque Raposo Tavares - Rua Walter Brito Belletti, s/nº",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Politécnica",
+	"bairro": "Jardim Sarah",
+	"cep": "05382-140",
+	"endereco": "Rua Paulino Baptista Conti, nº 2",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Giovani Gronchi",
+	"bairro": "Morumbi",
+	"cep": "05651-002",
+	"endereco": "Avenida Giovani Gronchi, nº 3413",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Santo Dias",
+	"bairro": "Conjunto Habitacional Instituto Adventista",
+	"cep": "05868-600",
+	"endereco": "Travessa Rosifloras, nº 301",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Parque Fernanda",
+	"bairro": "Parque Fernanda",
+	"cep": "05888-050",
+	"endereco": "Avenida Doutor Salvador Rocco, nº 261, defronte Rua Antônio Cânon",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Olinda",
+	"bairro": "Parque Regina",
+	"cep": "05773-110",
+	"endereco": "Rua Nelson Brissac, nº 1235, esquina com Avenida Padre Adolfo Kolping",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Vila das Belezas",
+	"bairro": "Vila Andrade",
+	"cep": "05729-100",
+	"endereco": "Rua Campo Novo do Sul, nº 500",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Paraisópolis",
+	"bairro": "Paraíso do Morumbi",
+	"cep": "05706-300",
+	"endereco": "Rua Irapará, nº 73",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Cidade Saudável",
+	"bairro": "Vila Socorro",
+	"cep": "04762-040",
+	"endereco": "Rua Ptolomeu, nº 869",
+	"recebeGesso": true
+}, {
+	"ecoponto": "Parque Peruche",
+	"bairro": "Parque Peruche",
+	"cep": "02535-008",
+	"endereco": "Avenida Engenheiro Caetano Álvares, nº 3142",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Vila Nova Cachoeirinha",
+	"bairro": "Jardim Centenário",
+	"cep": "02882-030",
+	"endereco": "Rua Felix Alves Pereira, nº 113",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Vila Santa Maria",
+	"bairro": "Vila Santista",
+	"cep": "02560-170",
+	"endereco": "Rua André Bolsena com a Travessa Luiz Sá",
+	"recebeGesso": false
+}, {
+	"ecoponto": "Jardim Antártica",
+	"bairro": "Jardim Antártica",
+	"cep": "02652-170",
+	"endereco": "Rua Dom Aquino, nº 103",
+	"recebeGesso": false
+}, {
+	"ecoponto": "São Leandro",
+	"bairro": "Vila Palmeiras",
+	"cep": "02725-010",
+	"endereco": "Rua São Leandro, nº 13",
+	"recebeGesso": false
+}]
