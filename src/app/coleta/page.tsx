@@ -1,10 +1,12 @@
 'use client'
+import CardEcopontos from "@/components/coleta/CardEcopontos"
+import { ecopontos } from "@/interfaces/interface"
 import { useEffect, useState } from "react"
 
 
 export default function Coleta() {
 
-    const [data, setData] = useState([])
+    const [data, setData] = useState<ecopontos[]>([])
 
     async function getInfoEcopontos() {
         try{
@@ -25,13 +27,18 @@ export default function Coleta() {
 
     return (
         data?.map((item, index) => {
+            const recebeGesso = item.recebeGesso ? "Sim" : "Não"
             return (
-                <div key={index}>
-
-                    <h1>{item.ecoponto}</h1>
-
-                </div>
+                <CardEcopontos 
+                key={index} 
+                ecoponto={item.ecoponto} 
+                endereco={item.endereco}
+                bairro={item.bairro}
+                cep={item.cep}
+                recebeGesso={recebeGesso}
+                />
             )
+            
         })
     )
 }

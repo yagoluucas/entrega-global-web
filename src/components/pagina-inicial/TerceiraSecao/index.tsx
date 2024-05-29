@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "../Button";
+import Botao from "../Botao";
 import './style.css'
 
 export default function TerceiraSecao() {
@@ -13,7 +13,7 @@ export default function TerceiraSecao() {
                 <p>
                     Invisíveis a olho nu, eles se originam de produtos comuns e da degradação de plásticos maiores, trazendo riscos significativos para o meio ambiente e a saúde humana
                 </p>
-                <Button textoBotao="Saiba Mais" linkBotao="https://www.ecycle.com.br/microplastico/" tamanho="small"/>
+                <Botao textoBotao="Saiba Mais" linkBotao="https://www.ecycle.com.br/microplastico/" tamanho="small"/>
             </div>
         </section>
     )

@@ -1,5 +1,6 @@
 import Image from "next/image";
-import Button from "../Button";
+import Botao from "../Botao";
+import './style.css'
 
 export default function QuartaSecao(){
     return (
@@ -12,7 +13,7 @@ export default function QuartaSecao(){
                 <p>
                     Ajude a preservar nossos oceanos: denuncie práticas prejudiciais. Cada ação conta para um futuro mais sustentável para a vida marinha
                 </p>
-                <Button textoBotao="Denuncia" linkBotao="/denuncias" tamanho="small"/>
+                <Botao textoBotao="Denuncia" linkBotao="/denuncias" tamanho="small"/>
             </div>
         </section>
     )

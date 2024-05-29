@@ -1,0 +1,38 @@
+main section.quarta--secao {
+    display: flex;
+    padding: 6rem 3rem;
+    justify-content: space-between;
+    align-items: center;
+    background: #eee;
+}
+
+main section.quarta--secao img {
+    width: 40%;
+    max-width: 1000px;
+    min-width: 300px;
+    height: 100vh;
+    max-height: 600px;
+}
+
+main section.quarta--secao div {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    order: -1;
+}
+
+main section.quarta--secao div h2, main section.quarta--secao div p {
+    width: 90%;
+}
+
+main section.quarta--secao h2 {
+    font-weight: 600;
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+}
+
+main section.quarta--secao div p {
+    font-size: 1.4rem;
+    margin-bottom: 3rem;
+}

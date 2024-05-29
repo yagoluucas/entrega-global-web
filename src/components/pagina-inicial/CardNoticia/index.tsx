@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Button from "../Button";
+import Botao from "../Botao";
 import CardNoticiaProps from './interface'
 import './style.css'
 export default function CardNoticia(props: CardNoticiaProps) {
@@ -17,7 +17,7 @@ export default function CardNoticia(props: CardNoticiaProps) {
                     {props.paragrafoTexto}
                 </p>
 
-                <Button tamanho="btn--card" textoBotao="Saiba Mais" linkBotao={props.linkBotao} />
+                <Botao tamanho="btn--card" textoBotao="Saiba Mais" linkBotao={props.linkBotao} />
             </div>
         </div>
     )

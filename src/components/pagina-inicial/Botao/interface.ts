@@ -1,7 +1,7 @@
-interface ButtonProps{
+interface BotaoProps{
     textoBotao:string,
     linkBotao:string,
     tamanho:string
 }
 
-export default ButtonProps
+export default BotaoProps
