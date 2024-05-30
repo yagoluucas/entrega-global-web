@@ -3,4 +3,54 @@ main.denuncia section.terceira--secao {
     justify-content: space-between;
     align-items: center;
     padding: 2rem;
+    margin-bottom: 1rem;
+}
+
+main.denuncia section.terceira--secao div {
+    order: 2;
+    width: 55%;
+}
+
+main.denuncia section.terceira--secao div h2 {
+    font-size: 1.7rem;
+    font-weight: 600;
+}
+
+main.denuncia section.terceira--secao div ul {
+    list-style-type: disc;
+    margin-left: 1rem;
+
+}
+
+main.denuncia section.terceira--secao div ul li {
+    font-size: 1rem;
+    font-weight: 550;
+    margin-top: 1rem;
+}
+
+main.denuncia section.terceira--secao div ul span {
+    font-size: 0.9rem;
+}
+
+
+main.denuncia section.terceira--secao img {
+    width: 40%;
+    max-width: 1000px;
+    min-width: 300px;
+}
+
+
+@media screen and (max-width:740px) {
+    main.denuncia section.terceira--secao {
+        flex-direction: column;
+    }
+
+    main.denuncia section.terceira--secao div {
+        width: 100%;
+        order: -1
+    }
+
+    main.denuncia section.terceira--secao img {
+        width: 90%;
+    }
 }

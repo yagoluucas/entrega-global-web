@@ -5,3 +5,49 @@ main.denuncia section.segunda--secao {
     background: #eee;
     padding: 2rem;
 }
+
+main.denuncia section.segunda--secao h2 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+main.denuncia section.segunda--secao div {
+    width: 55%;
+}
+
+main.denuncia section.segunda--secao ol {
+    list-style-type: decimal;
+    margin-left: 1rem;
+}
+
+main.denuncia section.segunda--secao ol li {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+main.denuncia section.segunda--secao ol li a {
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+main.denuncia section.segunda--secao img {
+    width: 40%;
+    max-width: 1000px;
+    min-width: 300px;
+}
+
+@media screen and (max-width:740px) {
+    main.denuncia section.segunda--secao {
+        flex-direction: column;
+    }
+
+    main.denuncia section.segunda--secao div {
+        width: 100%;
+        margin: 0 auto 1rem auto;
+    }
+
+    main.denuncia section.segunda--secao img {
+        width: 90%;
+    }
+}

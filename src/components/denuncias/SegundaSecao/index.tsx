@@ -5,7 +5,7 @@ export default function SegundaSecao() {
     return (
         <section className="segunda--secao">
             <div>
-                <h2>Veja abaixo o passo a passo para registrar uma denuncia</h2>
+                <h2>Como posso denunciar ?</h2>
                 <ol>
                     <li>Acessa a página de <Link href={'/login'}>login</Link></li>
                     <li>Caso não tenha conta, será necessário criar uma</li>

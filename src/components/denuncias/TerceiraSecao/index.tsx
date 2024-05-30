@@ -6,7 +6,7 @@ export default function TerceiraSecao() {
         <section className="terceira--secao">
             <div>
                 <h2>
-                    A Importância de Denunciar Maus Tratos à Vida Marinha
+                    Por que Denunciar ?
                 </h2>
                 <ul>
                     <li>Fortalecimento da Lei</li>

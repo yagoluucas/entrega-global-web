@@ -2,7 +2,7 @@ main.denuncia section.primeira--secao {
     background: #fff url('/denuncias/secao-denuncia.webp') bottom center no-repeat;
     background-size: cover;
     height: 100vh;
-    max-height: 460px;
+    max-height: 470px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,4 +30,19 @@ main.denuncia section.primeira--secao div h2 {
 
 main.denuncia section.primeira--secao div p {
     font-size: 1rem;
+}
+
+@media screen and (max-width:800px) {
+
+    main.denuncia section.primeira--secao {
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    main.denuncia section.primeira--secao div { 
+        width: 90%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
 }
