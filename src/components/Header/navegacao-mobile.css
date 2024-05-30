@@ -29,18 +29,18 @@ header nav.esconder {
 }
 
 header nav.mostrar {
-    display: flex;
     animation: 0.3s mostrar-menu forwards;
+    display: flex;   
 }
 
 @keyframes mostrar-menu {
     from {
+        display: none;
         opacity: 0;
-        transform: translateX(100%);
     }
 
     to {
+        display: flex;
         opacity: 1;
-        transform: translateX(0);
     }
 }

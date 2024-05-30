@@ -50,3 +50,22 @@ main section.quinta--secao div.conteudo p{
     font-size: 1rem;
     margin-bottom: 1.5rem;
 }
+
+@media screen and (max-width: 768px) {
+    main section.quinta--secao {
+        grid-template-columns: 1fr;
+    }
+
+    main section.quinta--secao .primeira--parte, main section.quinta--secao .segunda--parte {
+        grid-column: 1 / -1;
+    }
+
+    main section.quinta--secao .primeira--parte img {
+        height: 150px;
+    }
+
+    main section.quinta--secao .segunda--parte img {
+        height: 300px;
+    }
+    
+}

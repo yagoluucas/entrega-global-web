@@ -3,3 +3,11 @@ main section.segunda--secao {
     justify-content: space-between;
     background: #eee;
 }
+
+@media screen and (max-width: 768px) {
+    main section.segunda--secao {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
