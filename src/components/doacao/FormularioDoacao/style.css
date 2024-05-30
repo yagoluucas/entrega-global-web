@@ -1,0 +1,69 @@
+main.doacao section.formulario--doacao {
+    background: #fff;
+    padding: 1rem 3rem;
+}
+
+main.doacao section.formulario--doacao div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border:0.1rem solid #C1C1C1;
+    padding: 1rem;
+    margin-bottom: 1.3rem;
+}
+
+main.doacao section.formulario--doacao h1{
+    text-align: center;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+main.doacao section.formulario--doacao h1 span {
+    font-weight: 700;
+}
+
+main.doacao section.formulario--doacao form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+
+main.doacao section.formulario--doacao form label {
+    font-size: 1.1rem;
+}
+
+main.doacao section.formulario--doacao form input {
+    width: 100%;
+    border:0.1rem solid #C1C1C1;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+}
+
+main.doacao section.formulario--doacao button {
+    background: #222;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 700;
+    transition: 0.3s;
+    width: 30%;
+}
+
+main.doacao section.formulario--doacao button:hover {
+    background: #555;
+}
+
+main.doacao section.formulario--doacao p {
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+main.doacao section.formulario--doacao p a {
+    color: #222;
+    font-weight: 700;
+    text-decoration: underline;
+}
