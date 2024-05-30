@@ -57,7 +57,7 @@ main section.quinta--secao div.conteudo p{
     }
 
     main section.quinta--secao .primeira--parte, main section.quinta--secao .segunda--parte {
-        grid-column: 1 / -1;
+        grid-column: 1;
     }
 
     main section.quinta--secao .primeira--parte img {

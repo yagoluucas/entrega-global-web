@@ -8,7 +8,7 @@
     border: none;
     font-weight: 500;
     color: #fff;
-    background-color: #2563EB;
+    background-color: #222;
     width: 100%;
     text-align: center;
 }
@@ -36,7 +36,7 @@
 }
 
 .btn--primeira--pagina::after {
-    background-color: #2563EB;
+    background-color: #222;
 }
 
 .btn--primeira--pagina:hover::after {

@@ -1,4 +1,4 @@
-main section.primeira--secao {
+main.pagina--principal section.primeira--secao {
     background: #ccc url('/pagina-inicial/fundo-plastico-na-praia.webp') no-repeat center center;
     padding: 6rem 3rem;
     background-size: cover;
@@ -8,7 +8,7 @@ main section.primeira--secao {
     max-height: 650px;
 }
 
-main section.primeira--secao h1.titulo--primeira--secao{
+main.pagina--principal section.primeira--secao h1.titulo--primeira--secao{
     font-size: 4rem;
     color: #fff;
     font-weight: 700;
@@ -17,13 +17,13 @@ main section.primeira--secao h1.titulo--primeira--secao{
 }
 
 @media screen and (max-width:768px) {
-    main section.primeira--secao h1.titulo--primeira--secao{
+    main.pagina--principal section.primeira--secao h1.titulo--primeira--secao{
         font-size: 2.5rem;
         text-align: center;
         width: 100%;
     }
 
-    main section.primeira--secao {
+    main.pagina--principal section.primeira--secao {
         align-items: center;
         justify-content: center;
         padding: 6rem 1rem;

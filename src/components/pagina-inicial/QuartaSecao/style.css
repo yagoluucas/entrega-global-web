@@ -1,4 +1,4 @@
-main section.quarta--secao {
+main.pagina--principal section.quarta--secao {
     display: flex;
     padding: 6rem 3rem;
     justify-content: space-between;
@@ -6,7 +6,7 @@ main section.quarta--secao {
     background: #eee;
 }
 
-main section.quarta--secao img {
+main.pagina--principal section.quarta--secao img {
     width: 40%;
     max-width: 1000px;
     min-width: 300px;
@@ -14,7 +14,7 @@ main section.quarta--secao img {
     max-height: 600px;
 }
 
-main section.quarta--secao div {
+main.pagina--principal section.quarta--secao div {
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -22,43 +22,43 @@ main section.quarta--secao div {
     order: -1;
 }
 
-main section.quarta--secao div h2, main section.quarta--secao div p {
+main.pagina--principal section.quarta--secao div h2, main section.quarta--secao div p {
     width: 90%;
 }
 
-main section.quarta--secao h2 {
+main.pagina--principal section.quarta--secao h2 {
     font-weight: 600;
     font-size: 2.6rem;
     margin-bottom: 1rem;
 }
 
-main section.quarta--secao div p {
+main.pagina--principal section.quarta--secao div p {
     font-size: 1.4rem;
     margin-bottom: 3rem;
 }
 
 @media screen and (max-width: 768px) {
-    main section.quarta--secao {
+    main.pagina--principal section.quarta--secao {
         flex-direction: column;
         justify-content: center;
     }
 
-    main section.quarta--secao img {
+    main.pagina--principal section.quarta--secao img {
         width: 100%;
         height: 60vh;
         max-width: 768px;
     }
 
-    main section.quarta--secao div {
+    main.pagina--principal section.quarta--secao div {
         width: 100%;
         margin-bottom: 1.5rem;
     }
 
-    main section.quarta--secao div h2 {
+    main.pagina--principal section.quarta--secao div h2 {
         font-size: 2rem;
     }
 
-    main section.quarta--secao div p {
+    main.pagina--principal section.quarta--secao div p {
         font-size: 1.2rem;
         margin-bottom: 1rem;
     }

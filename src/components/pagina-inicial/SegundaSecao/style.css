@@ -1,11 +1,11 @@
-main section.segunda--secao {
+main.pagina--principal section.segunda--secao {
     display: flex;
     justify-content: space-between;
     background: #eee;
 }
 
 @media screen and (max-width: 768px) {
-    main section.segunda--secao {
+    main.pagina--principal section.segunda--secao {
         flex-direction: column;
         align-items: center;
     }

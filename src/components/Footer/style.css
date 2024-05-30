@@ -49,21 +49,32 @@ footer nav.links--uteis ul li a:hover{
     border-bottom: 2px solid #fff;
 }
 
+footer section.alunos img{
+    margin-bottom: 0.3rem;
+}
+
+footer section.alunos p {
+    font-size: 0.9rem;
+    margin-bottom: 1.2rem;
+}
+
+footer section.alunos ul li {
+    margin: 0.7rem 0;
+    font-size: 0.8rem;
+}
+
 @media screen and (max-width: 800px) {
     footer {
         flex-direction: column;
-        gap: 1rem;
+        gap: 2rem;
     }
 
-    footer section.rede--social {
-        display: flex;
-        justify-content: center;
+    footer section.rede--social h2 {
+        margin: 0 0 0.3rem 0;
     }
 
-    footer nav.links--uteis ul {
-        display: flex;
-        justify-content: center;
-        gap: 1rem;
+    footer section.rede--social div a {
+        padding: 0;
     }
     
 }

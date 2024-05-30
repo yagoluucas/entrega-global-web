@@ -3,9 +3,12 @@ import Image from "next/image";
 import Link from "next/link";
 import './style.css'
 import './navegacao-mobile.css'
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
+import { usePathname } from 'next/navigation'
 
 export default function Header(){
+
+    const path = usePathname();
 
     const navRef = useRef<HTMLElement>(null);
 
@@ -18,6 +21,11 @@ export default function Header(){
         navRef.current?.classList.remove('mostrar');
         navRef.current?.classList.add('esconder');
     }
+
+    useEffect(() => {
+        navRef.current?.classList.remove('mostrar');
+        navRef.current?.classList.add('esconder');
+    }, [path])
 
     return (
         <header>

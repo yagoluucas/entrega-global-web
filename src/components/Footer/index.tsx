@@ -21,12 +21,13 @@ export default function Footer() {
                 </ul>
             </nav>
 
-            <section>
+            <section className='alunos'>
                 <Image src={'/logo.png'} alt="Logo da empresa" width={80} height={80} />
                 <p>© 2024 MR.turtle - Todos os direitos reservados</p>
                 <ul>
                     <li>Nome: Yago Lucas rm: 5503013</li>
                     <li>Nome: Nicolas Martins rm: 553478</li>
+                    <li>Nome: Ander Kamada rm: 553449</li>
                 </ul>
             </section>
         </footer>
