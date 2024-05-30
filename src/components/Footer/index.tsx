@@ -23,7 +23,11 @@ export default function Footer() {
 
             <section>
                 <Image src={'/logo.png'} alt="Logo da empresa" width={80} height={80} />
-                <p>© 2021 MR.turtle - Todos os direitos reservados</p>
+                <p>© 2024 MR.turtle - Todos os direitos reservados</p>
+                <ul>
+                    <li>Nome: Yago Lucas rm: 5503013</li>
+                    <li>Nome: Nicolas Martins rm: 553478</li>
+                </ul>
             </section>
         </footer>
     )
