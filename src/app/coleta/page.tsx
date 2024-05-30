@@ -1,6 +1,6 @@
 'use client'
 import CardEcopontos from "@/components/coleta/CardEcopontos"
-import PrimeiraSecao from "@/components/coleta/PrimeiraSecao"
+import '@/styles/ecopontos.css'
 import { ecopontos } from "@/interfaces/interface"
 import { useEffect, useState } from "react"
 
@@ -27,9 +27,8 @@ export default function Coleta() {
 
 
     return (
-        <main>
-            <PrimeiraSecao />
-            <section className="flex gap-2 flex-wrap justify-center">
+        <main className="ecopontos">
+            <section className="lista--ecopontos">
                 {data.map((item, index) => {
                     const recebeGesso = item.recebeGesso ? "Sim" : "Não"
                     return (

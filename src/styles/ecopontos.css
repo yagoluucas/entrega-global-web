@@ -1,0 +1,13 @@
+main.ecopontos section.lista--ecopontos {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (max-width: 740px) {
+    main.ecopontos section.lista--ecopontos {
+        flex-direction: column;
+    }
+    
+}
