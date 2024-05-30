@@ -67,3 +67,12 @@ main.doacao section.formulario--doacao p a {
     font-weight: 700;
     text-decoration: underline;
 }
+
+@media (max-width: 860px) {
+    main.doacao section.formulario--doacao {
+        width: 100%;
+        order: -1;
+        padding: 1rem;
+    }
+    
+}

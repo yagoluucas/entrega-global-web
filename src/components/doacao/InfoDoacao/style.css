@@ -9,3 +9,11 @@ main.doacao section.info--doacao h2 {
 main.doacao section.info--doacao p {
     font-size: 1.1rem;
 }
+
+@media (max-width: 860px) {
+    main.doacao section.info--doacao {
+        width: 100%;
+        margin: 2rem auto;
+    }
+    
+}
