@@ -1,5 +1,5 @@
 import Image from "next/image";
-import './styles.css';
+import './style.css';
 export default function PrimeiraSecao() {
     return (
         <section className="econtrar--ecoponto">

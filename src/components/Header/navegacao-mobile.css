@@ -1,0 +1,46 @@
+header nav.navegacao-mobile {
+    display: none;
+    flex-direction: column;
+    gap: 1.2rem;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    z-index: 1000;
+}
+
+header nav.navegacao-mobile img.menu--mobile {
+    cursor: pointer;
+}
+
+header nav.navegacao-mobile ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    align-items: start;
+}
+
+header nav.esconder {
+    display: none;
+}
+
+header nav.mostrar {
+    display: flex;
+    animation: 0.3s mostrar-menu forwards;
+}
+
+@keyframes mostrar-menu {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

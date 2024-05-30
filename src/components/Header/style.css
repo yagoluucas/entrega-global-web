@@ -10,6 +10,10 @@ header {
     background: #fff;
 }
 
+header img.menu--mobile {
+    display: none;
+}
+
 header ul{
     display: flex;
     gap: 1.2rem;
@@ -32,4 +36,15 @@ header ul li:last-child a {
     gap: 0.2rem;
     border-radius: 1rem;
     padding: 0.2rem;
+}
+
+@media screen and (max-width: 768px){
+    header nav.navegacao {
+        display: none;
+    }
+
+    header img.menu--mobile {
+        display: block;
+        cursor: pointer;
+    }
 }

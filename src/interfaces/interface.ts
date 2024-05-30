@@ -5,7 +5,8 @@ interface ecopontos{
 	endereco: string,
 	recebeGesso: string,
 	imagem: string,
-    key?: number
+    key?: number,
+	enderecoCompleto: string
 }
 
 export type {ecopontos}
