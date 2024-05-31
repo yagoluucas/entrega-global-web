@@ -6,7 +6,7 @@ export default function QuintaSecao() {
         <section className="quinta--secao">
             <article className="primeira--parte">
                 <section className="cadastrar">
-                    <Image alt="uma baleia e uma tartaruga em um fundo azul" src={'/pagina-inicial/mrturtle.png'} width={400} height={300} />
+                    <Image alt="uma baleia e uma tartaruga em um fundo azul" src={'/pagina-inicial/Mr.Turtle.webp'} width={400} height={300} />
                     <div className="conteudo">
                         <h2>Seja um Turtle</h2>
                         <p>Junte-se a nós na proteção dos oceanos: cadastre-se agora e faça parte da mudança!</p>
@@ -15,10 +15,10 @@ export default function QuintaSecao() {
                 </section>
 
                 <section className="doe">
-                    <Image alt="uma tartaruga no oceano" src={'/pagina-inicial/doacao-mrturtle.jpg'} width={400} height={300} />
+                    <Image alt="uma tartaruga no oceano" src={'/pagina-inicial/doacao-Tartaruga.webp'} width={400} height={300} />
                     <div className="conteudo">
                         <h2>Doe para uma Instituição</h2>
-                        <p>A MR.turtle liga você de empresas que promove a saúde dos oceanos</p>
+                        <p>A MR.Turtle liga você de empresas que promove a saúde dos oceanos</p>
                         <Botao textoBotao="Doe" tamanho="small" linkBotao="/doacao" />
                     </div>
                 </section>
