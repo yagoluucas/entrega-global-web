@@ -6,10 +6,13 @@ import { useState } from "react";
 import { useRouter } from 'next/navigation';
 import ListaDenuncias from "../ListaDenuncias";
 import CardDenuncia from '../CardDenuncia';
+import RegistrarDenuncia from '../RegistrarDenuncia';
 
 export default function PaginaDenuncia(props: PaginaDenunciaProps) {
     const rota = useRouter()
     const [titulo, setTitulo] = useState("Todas denuncias")
+    const [fazerDenuncia, setFazerDenuncia] = useState(false)
+
     const [denuncias, setDenuncias] = useState(() => {
         return [{
             titulo: "Denuncia 1",
@@ -19,15 +22,18 @@ export default function PaginaDenuncia(props: PaginaDenunciaProps) {
     })
 
     function todasDenuncias() {
+        setFazerDenuncia(false)
         setTitulo("Todas denuncias")
     }
 
-    function minhasDenuncias() { 
+    function minhasDenuncias() {
         setTitulo("Minhas denuncias")
     }
 
     function novaDenuncia() {
-        console.log("Novas denuncias")
+        setFazerDenuncia(false)
+        setTitulo("Nova denuncia")
+        setFazerDenuncia(true)
     }
 
     function sair() {
@@ -42,19 +48,18 @@ export default function PaginaDenuncia(props: PaginaDenunciaProps) {
                 <div>
                     <h1>Olá, {props.usuario}</h1>
                     <ul>
-                        <li><BotaoPaginaDenuncia onClick={todasDenuncias} texto="Denuncias"/></li>
-                        <li><BotaoPaginaDenuncia onClick={minhasDenuncias} texto="Minhas denuncias"/></li>
-                        <li><BotaoPaginaDenuncia onClick={novaDenuncia} texto="Nova denuncia"/></li>
-                        <li className="btn--sair"><BotaoPaginaDenuncia onClick={sair} texto="Sair"/></li>
+                        <li><BotaoPaginaDenuncia onClick={todasDenuncias} texto="Denuncias" /></li>
+                        <li><BotaoPaginaDenuncia onClick={minhasDenuncias} texto="Minhas denuncias" /></li>
+                        <li><BotaoPaginaDenuncia onClick={novaDenuncia} texto="Nova denuncia" /></li>
+                        <li className="btn--sair"><BotaoPaginaDenuncia onClick={sair} texto="Sair" /></li>
                     </ul>
                 </div>
-                
             </nav>
 
-            <ListaDenuncias titulo={titulo} 
-            children={denuncias.map((item, index) => {
-                return <CardDenuncia local={item.local} key={index} descricao={item.descricao} titulo={item.titulo}/>
-            })}/>
+            {fazerDenuncia ? <RegistrarDenuncia/> : <ListaDenuncias titulo={titulo}
+                children={denuncias.map((item, index) => {
+                    return <CardDenuncia local={item.local} key={index} descricao={item.descricao} titulo={item.titulo} />
+                })} />}
         </main>
     )
 }

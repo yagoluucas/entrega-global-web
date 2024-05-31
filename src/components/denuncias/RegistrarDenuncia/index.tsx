@@ -32,6 +32,8 @@ export default function RegistrarDenuncia() {
                 <div>
                     <label onKeyDown={(e) => {validaCampoTexto(e)}} htmlFor="titulo">Titulo da denuncia</label>
                     <input onChange={(e) => {setaValorCampo(e, "titulo")}} type="text" placeholder="titulo" name="titulo" id="titulo"/>
+                    <label htmlFor="">Local:</label>
+                    <input onKeyDown={(e) => {validaCampoTexto(e)}} type="text" placeholder="Ex: Praia Grande" name="local" id="local"/>
                 </div>
                 <textarea onChange={(e) => {setaValorCampo(e, "descricao")}} maxLength={200} minLength={15} placeholder="Descrição"></textarea>
             </form>
