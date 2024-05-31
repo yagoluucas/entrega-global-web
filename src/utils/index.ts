@@ -22,6 +22,20 @@ export function validaCampoEmailTelefone(e: any, regex: RegExp) {
     }
 }
 
+export function validaCampoNumero (e: any) {
+    if (e.target.value === '') {
+        setarCampoInvalido(e.target)
+    } else {
+        const valor = parseFloat(e.target.value)
+        if (valor >=1) {
+            retirarCampoInvalido(e.target)           
+        } else {
+            setarCampoInvalido(e.target)
+        }
+    }    
+    
+}
+
 function setarCampoInvalido(elemento: any) {
     elemento.classList.add('invalido')
     elemento.classList.remove('valido')

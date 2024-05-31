@@ -56,6 +56,11 @@ main.doacao section.formulario--doacao button:hover {
     background: #555;
 }
 
+main.doacao section.formulario--doacao button:disabled {
+    background: #d6d6d6;
+    cursor: not-allowed;
+}
+
 main.doacao section.formulario--doacao p {
     font-size: 0.9rem;
     text-align: center;
