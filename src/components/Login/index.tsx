@@ -1,6 +1,7 @@
 'use client'
 import Link from 'next/link'
 import './style.css'
+import { useRouter } from "next/navigation"
 import { useState, useEffect } from 'react'
 import BotaoCadastro from '../BotaoCadastro'
 import { validaCampoTexto } from "@/utils";
@@ -11,6 +12,7 @@ export default function Login() {
     const [usuario, setUsuario] = useState('')
     const [senha, setSenha] = useState('')
     const [desativado, setDesativado] = useState(true)
+    const rota = useRouter()
 
     function colocaValor(e:any, tipo:string) {
         if (tipo == 'usuario') {
@@ -27,6 +29,17 @@ export default function Login() {
             setDesativado(true)
         }
     }, [usuario, senha])
+
+
+    async function logaUsuario(usuario: string, senha: string) {
+        const resposta = await enviarLogin(usuario, senha)
+        console.log(resposta)
+        if (resposta) {
+            rota.push(`/denuncias/${usuario}`)
+        } else {
+            alert('Usuário ou senha inválidos')
+        }
+    }
  
     return (
         <section className="login-container">
@@ -38,7 +51,7 @@ export default function Login() {
                     <input onKeyDown={(e) => {validaCampoTexto(e)}} onKeyUp={(e) => {colocaValor(e, 'senha')}} placeholder="senha" name="senha" id="senha" type="password" />
                 </div>              
             </form>
-            <BotaoCadastro texto='Entrar' desativado={desativado} onClick={() => {enviarLogin(usuario, senha)}} />
+            <BotaoCadastro texto='Entrar' desativado={desativado} onClick={() => {logaUsuario(usuario, senha)}} />
             <span className='novo--usuario'>Novo por aqui ? faça o seu cadastro clicando <Link href={'/cadastro'}>aqui</Link></span>
         </section>
     )
