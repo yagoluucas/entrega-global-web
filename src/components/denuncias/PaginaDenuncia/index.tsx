@@ -2,17 +2,21 @@
 import './style.css'
 import { PaginaDenunciaProps } from "./interface";
 import BotaoPaginaDenuncia from "../BotaoPaginaDenuncia";
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
+import { useRouter } from 'next/navigation';
 import ListaDenuncias from "../ListaDenuncias";
+import CardDenuncia from '../CardDenuncia';
 
 export default function PaginaDenuncia(props: PaginaDenunciaProps) {
+    const rota = useRouter()
     const [titulo, setTitulo] = useState("Todas denuncias")
-    const [denuncias, setDenuncias] = useState([
-        {
-            titulo: "",
-            descricao: "",
-        }
-    ])
+    const [denuncias, setDenuncias] = useState(() => {
+        return [{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        }]
+    })
 
     function todasDenuncias() {
         setTitulo("Todas denuncias")
@@ -27,7 +31,9 @@ export default function PaginaDenuncia(props: PaginaDenunciaProps) {
     }
 
     function sair() {
-        console.log("Sair")
+        localStorage.removeItem("usuario")
+        alert("Usuario deslogado")
+        rota.push("/login")
     }
 
     return (
@@ -45,9 +51,9 @@ export default function PaginaDenuncia(props: PaginaDenunciaProps) {
                 
             </nav>
 
-            <ListaDenuncias  titulo={titulo} 
-            children={denuncias.map((item,index) => {
-                return <div key={index}>{item.titulo}</div>
+            <ListaDenuncias titulo={titulo} 
+            children={denuncias.map((item, index) => {
+                return <CardDenuncia local={item.local} key={index} descricao={item.descricao} titulo={item.titulo}/>
             })}/>
         </main>
     )

@@ -1,0 +1,10 @@
+main section.lista--denuncia div.denuncias{
+    display: flex;
+    gap: 1rem;
+}
+
+main section.lista--denuncia h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
