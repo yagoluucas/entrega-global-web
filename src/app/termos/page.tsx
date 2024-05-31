@@ -1,10 +1,8 @@
-
+import '@/styles/termos.css'
 export default function Termos() {
     return (
-        <main>
-            <head>
-                <h1>Termos de Uso</h1>
-            </head>
+        <main className="termos">
+            <h1>Termos de Uso</h1>
             
             <section>
                 <h2>1. Introdução</h2>

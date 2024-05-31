@@ -38,10 +38,10 @@ export default function Header(){
                 <ul>
                     <li><Link href={'/coleta'}>Pontos de coleta</Link></li>
                     <li><Link href={'/denuncias'}>Denuncie</Link></li>
-                    <li><Link href={'/doacao'}>Doe já</Link></li>
+                    <li><Link href={'/doacao'}>Doe</Link></li>
                     <li>
                         <Link className="link--login" href={'/login'}>
-                            <Image alt="icone de login" width={25} height={25} src={'/user.svg'}/> Login
+                            <Image alt="icone de login" width={25} height={25} src={'/user.svg'}/> Entrar
                         </Link>
                     </li>
                 </ul>
@@ -53,10 +53,10 @@ export default function Header(){
                 <ul>
                     <li><Link href={'/coleta'}>Pontos de coleta</Link></li>
                     <li><Link href={'/denuncias'}>Denuncie</Link></li>
-                    <li><Link href={'/doacao'}>Doe já</Link></li>
+                    <li><Link href={'/doacao'}>Doe</Link></li>
                     <li>
                         <Link className="link--login" href={'/login'}>
-                            <Image alt="icone de login" width={25} height={25} src={'/user.svg'}/> Login
+                            <Image alt="icone de login" width={25} height={25} src={'/user.svg'}/> Entrar
                         </Link>
                     </li>
                 </ul>
