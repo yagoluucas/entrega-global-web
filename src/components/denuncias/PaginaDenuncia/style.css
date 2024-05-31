@@ -1,0 +1,31 @@
+main.usuario--logado {
+    display: flex;
+    justify-content: space-between;
+}
+
+main.usuario--logado h1 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+
+main.usuario--logado nav{
+    background: #222;
+    color: #fff;
+    width: 20%;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+main.usuario--logado nav li.btn--sair{
+    margin-top: 10rem;
+}
+
+
+main.usuario--logado section{
+    width: 80%;
+    padding: 1rem;
+}

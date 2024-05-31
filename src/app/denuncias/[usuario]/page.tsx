@@ -1,7 +1,7 @@
+import PaginaDenuncia from "@/components/denuncias/PaginaDenuncia";
+
 export default function DenunciasFeitas(props: any) {
     return (
-        <main>
-            <h1>OI</h1>
-        </main>
+        <PaginaDenuncia usuario={props.params.usuario}/>
     )
 }

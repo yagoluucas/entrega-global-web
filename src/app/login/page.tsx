@@ -6,7 +6,7 @@ export default function Login() {
 
     if (localStorage.getItem('usuario') !== null) {
         const rota = useRouter()
-        const usuario = JSON.parse(localStorage.getItem('usuario'))
+        const usuario = JSON.parse(localStorage.getItem('usuario')!)
         console.log(usuario)    
         rota.push(`/denuncias/${usuario}`)
     } else {
