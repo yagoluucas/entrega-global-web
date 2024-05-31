@@ -1,4 +1,4 @@
-main section.login-container {
+main section.cadastro {
     background-color: #2f2f2f;
     border-radius: 0.5rem;
     box-shadow: rgb(31 31 31 / 17%) 0px -1.4375rem 1.5625rem 0px inset,
@@ -6,36 +6,41 @@ main section.login-container {
         rgba(0, 0, 0, 0.1) 0px -4.9375rem 2.5rem 0px inset, rgba(0, 0, 0, 0.06) 0px 0.125rem 0.0625rem,
         rgba(0, 0, 0, 0.09) 0px 0.25rem 0.125rem, rgba(0, 0, 0, 0.09) 0px 0.5rem 0.25rem,
         rgba(0, 0, 0, 0.09) 0px 1rem 0.5rem, rgba(0, 0, 0, 0.09) 0px 2rem 1rem;
-    padding: 2.5rem;
+    padding: 1.3rem 2rem;
     max-width: 440px;
     width: 100%;
-    text-align: center;
-    margin: 5rem auto;
+    margin: 1rem auto;
 }
 
-form.login-form {
+form.form--cadastro {
     display: flex;
     flex-direction: column;
 }
-
-main form.login-form h1 {
+main section.cadastro h1 {
     color: #ffffff;
     font-weight: 500;
     font-size: 2.5rem;
-    margin-bottom: 0.3125rem;
+    margin-bottom: 0.2rem;
+    text-align: center;
 }
 
-main form.login-form h2.subtitulo {
+main section.cadastro h2 {
     color: #ffffff;
-    font-weight: 400;
-    font-size: 0.9375rem;
-    margin-bottom: 0.9375rem;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
 }
 
-main form.login-form .credenciais input {
+main form.form--cadastro label {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 0.3rem;
+}
+
+main form.form--cadastro input {
     background: none;
     border: 0.0625rem solid #353535;
-    padding: 0.9375rem 1.4375rem;
+    padding: 0.8rem 1rem;
     font-size: 1rem;
     border-radius: 0.5rem;
     color: #ffffff;
@@ -48,19 +53,20 @@ main form.login-form .credenciais input {
     margin-bottom: 1rem;    
 }
 
-main form.login-form .credenciais input:focus {
-    border-color: #0173ed;
-    outline: none;
+main section.cadastro button {
+    display: block;
+    margin-bottom: 1rem;
+    padding: 0.7rem 1rem;
+    background: #0173ed ;
+    font-size: 1rem;
+    border-radius: 0.5rem;
 }
 
-
-
-main section.login-container span {
+main section.cadastro span {
     color: #ffffff;
     font-size: 0.9375rem;
 }
 
-main section.login-container span a {
+main section.cadastro span a {
     color: #0173ed;
-    text-decoration: underline;
 }

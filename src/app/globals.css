@@ -8,3 +8,11 @@ body {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 62.5%;
 }
+
+input.invalido {
+  border: 2px solid #ff0000 !important;
+}
+
+input.valido {
+  border: 2px solid #00ff00 !important;
+}

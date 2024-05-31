@@ -1,0 +1,22 @@
+main button.cadastro {
+    padding: 0.4375rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #0173ed;
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 1.3rem;
+    width: 100%;
+}
+
+main button.cadastro:hover {
+    background-color: #0173ed;
+}
+
+main button.cadastro:disabled {
+    background-color: #d6d6d6;
+    cursor: not-allowed;
+}

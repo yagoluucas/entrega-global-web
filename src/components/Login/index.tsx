@@ -1,14 +1,18 @@
 'use client'
+import Link from 'next/link'
 import './style.css'
 import { useState, useEffect } from 'react'
-export default function LoginDiv() {
+import BotaoCadastro from '../BotaoCadastro'
+import { validaCampoTexto } from "@/utils";
+import { enviarLogin } from './funcoes'
+
+export default function Login() {
 
     const [usuario, setUsuario] = useState('')
     const [senha, setSenha] = useState('')
     const [desativado, setDesativado] = useState(true)
 
     function colocaValor(e:any, tipo:string) {
-        console.log(e.target.value)
         if (tipo == 'usuario') {
             setUsuario(e.target.value)
         } else {
@@ -23,23 +27,19 @@ export default function LoginDiv() {
             setDesativado(true)
         }
     }, [usuario, senha])
-
-    function enviarLogin() {
-        console.log(usuario, senha)
-    }
  
     return (
         <section className="login-container">
             <form className="login-form">
                 <h1>Login</h1>
                 <h2 className="subtitulo">Logar com a sua conta</h2>
-
                 <div className="credenciais">
-                    <input onKeyUp={(e) => {colocaValor(e, 'usuario')}} placeholder="Usuário" id="usuario" type="text" />
-                    <input onKeyUp={(e) => {colocaValor(e, 'senha')}} placeholder="senha" name="senha" id="senha" type="password" />
+                    <input onKeyDown={(e) => {validaCampoTexto(e)}} onKeyUp={(e) => {colocaValor(e, 'usuario')}} placeholder="Usuário" id="usuario" type="text" />
+                    <input onKeyDown={(e) => {validaCampoTexto(e)}} onKeyUp={(e) => {colocaValor(e, 'senha')}} placeholder="senha" name="senha" id="senha" type="password" />
                 </div>              
             </form>
-            <button onClick={enviarLogin} disabled={desativado}>Login</button>
+            <BotaoCadastro texto='Entrar' desativado={desativado} onClick={() => {enviarLogin(usuario, senha)}} />
+            <span className='novo--usuario'>Novo por aqui ? faça o seu cadastro clicando <Link href={'/cadastro'}>aqui</Link></span>
         </section>
     )
 }
