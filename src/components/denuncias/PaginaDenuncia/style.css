@@ -18,15 +18,43 @@ main.usuario--logado nav{
     display: flex;
     max-width: 350px;
     flex-direction: column;
-    justify-content: space-between;
+    position: sticky;
+    top: 0;
 }
 
 main.usuario--logado nav li.btn--sair{
-    margin-top: 10rem;
+    margin-top: 2rem;
 }
-
 
 main.usuario--logado section{
     width: 75%;
     padding: 1rem;
+}
+
+main .navegacao--denuncias img.icone--fechar {
+    cursor: pointer;
+    margin: 0 0.5rem 1.5rem 0;
+    align-self: flex-end;
+}
+
+main.usuario--logado img.abrir--menu {
+    display: none;
+}
+
+@media screen and (max-width:890px) {
+    main .navegacao--denuncias {
+        display: none !important;
+    }
+
+    main.usuario--logado section {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    main.usuario--logado img.abrir--menu {
+        display: block;
+        cursor: pointer;
+        position: fixed;
+        margin-top: 1rem;
+    }
 }

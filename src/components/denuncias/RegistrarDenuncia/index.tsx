@@ -1,43 +1,57 @@
 'use client'
 import { useEffect, useState } from "react"
 import { validaCampoTexto } from "@/utils"
+import './style.css'
+import BotaoPaginaDenuncia from "../BotaoPaginaDenuncia"
+import { salvarDenuncia } from "./funcoes"
 
 export default function RegistrarDenuncia() {
 
     const [titulo, setTitulo] = useState('')
     const [descricao, setDescricao] = useState('')
+    const [local, setLocal] = useState('')
     const [desativado, setDesativado] = useState(true)
 
     function setaValorCampo(e: any, tipo: string) {
-        if (tipo == 'titulo') {
-            setTitulo(e.target.value)
-        } else {
-            setDescricao(e.target.value)
+        switch (tipo) {
+            case "titulo":
+                setTitulo(e.target.value)
+                break
+            case "descricao":
+                setDescricao(e.target.value)
+                break
+            default:
+                setLocal(e.target.value)
         }
     }
 
     useEffect(() => {
-        if (titulo.length >= 3 && descricao.length >= 15) {
+        console.log(titulo.length >= 3 && descricao.length >= 3)
+        if (titulo.length >= 3 && descricao.length >= 3 && local.length >= 3) {
             setDesativado(false)
         } else {
             setDesativado(true)
-        }    
-    }, [titulo, descricao])
+        }
+    }, [titulo, descricao, local])
 
     return (
-        <section>
-            <h1>Registrar Denúncia</h1>
-            <p>Registre aqui a sua denúncia</p>
+        <section className="secao--registrar--denuncia">
+            <h2>Registrar Denúncia</h2>
             <form>
                 <div>
-                    <label onKeyDown={(e) => {validaCampoTexto(e)}} htmlFor="titulo">Titulo da denuncia</label>
-                    <input onChange={(e) => {setaValorCampo(e, "titulo")}} type="text" placeholder="titulo" name="titulo" id="titulo"/>
-                    <label htmlFor="">Local:</label>
-                    <input onKeyDown={(e) => {validaCampoTexto(e)}} type="text" placeholder="Ex: Praia Grande" name="local" id="local"/>
+
+                    <label htmlFor="titulo">Titulo da denuncia</label>
+                    <input onKeyUp={(e) => { validaCampoTexto(e) }} onChange={(e) => { setaValorCampo(e, "titulo") }} type="text" placeholder="Titulo" name="titulo" id="titulo" />
+
+                    <label htmlFor="local">Local:</label>
+                    <input onKeyUp={(e) => { validaCampoTexto(e) }} onChange={(e) => {setaValorCampo(e, "local")}} type="text" placeholder="Ex: Praia Grande" name="local" id="local" />
+
                 </div>
-                <textarea onChange={(e) => {setaValorCampo(e, "descricao")}} maxLength={200} minLength={15} placeholder="Descrição"></textarea>
+
+                <textarea onKeyUp={(e) => { validaCampoTexto(e) }} onChange={(e) => { setaValorCampo(e, "descricao") }} maxLength={200} minLength={4} placeholder="Descrição"></textarea>
             </form>
-            <button disabled={desativado}>Enviar</button>
+
+            <BotaoPaginaDenuncia onClick={() => { salvarDenuncia(titulo, local, descricao) }} desabilitado={desativado} texto="Registrar Denuncia" />
         </section>
     )
 }

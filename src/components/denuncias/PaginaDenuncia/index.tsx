@@ -7,6 +7,7 @@ import { useRouter } from 'next/navigation';
 import ListaDenuncias from "../ListaDenuncias";
 import CardDenuncia from '../CardDenuncia';
 import RegistrarDenuncia from '../RegistrarDenuncia';
+import Image from 'next/image';
 
 export default function PaginaDenuncia(props: PaginaDenunciaProps) {
     const rota = useRouter()
@@ -18,7 +19,131 @@ export default function PaginaDenuncia(props: PaginaDenunciaProps) {
             titulo: "Denuncia 1",
             descricao: "Descricao top da denuncia 1",
             local: "Rua 1"
-        }]
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },{
+            titulo: "Denuncia 1",
+            descricao: "Descricao top da denuncia 1",
+            local: "Rua 1"
+        },]
     })
 
     function todasDenuncias() {
@@ -27,6 +152,7 @@ export default function PaginaDenuncia(props: PaginaDenunciaProps) {
     }
 
     function minhasDenuncias() {
+        setFazerDenuncia(false)
         setTitulo("Minhas denuncias")
     }
 
@@ -44,7 +170,9 @@ export default function PaginaDenuncia(props: PaginaDenunciaProps) {
 
     return (
         <main className="usuario--logado">
-            <nav className="navegacao--denuncias">
+            <Image className='abrir--menu' src="/arrow-square-right-fill.svg" alt="icone menu" width={40} height={40} />
+            <nav className="navegacao--denuncias abrir">
+                <Image className='icone--fechar' src="/x-square-fill.svg" alt="icone fechar" width={40} height={40} />
                 <div>
                     <h1>Olá, {props.usuario}</h1>
                     <ul>

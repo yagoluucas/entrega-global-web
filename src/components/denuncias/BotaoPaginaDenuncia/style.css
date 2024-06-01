@@ -25,3 +25,8 @@ button.denuncia:active {
     box-shadow: inset 0px 0.1em 0.6em #3c4fe0;
     transform: translateY(0em);
 }
+
+section.secao--registrar--denuncia button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
