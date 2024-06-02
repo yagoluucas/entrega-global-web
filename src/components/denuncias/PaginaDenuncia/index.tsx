@@ -8,7 +8,7 @@ import ListaDenuncias from "../ListaDenuncias";
 import CardDenuncia from '../CardDenuncia';
 import RegistrarDenuncia from '../RegistrarDenuncia';
 import Image from 'next/image';
-import { todasDenuncias, minhasDenuncias, novaDenuncia, fecharMenu, mostrarMenu } from './funcoes';
+import { todasDenuncias, minhasDenuncias, novaDenuncia, fecharMenu, mostrarMenu, lerTodasAsDenuncias } from './funcoes';
 
 export default function PaginaDenuncia(props: PaginaDenunciaProps) {
     const rota = useRouter()
@@ -18,145 +18,19 @@ export default function PaginaDenuncia(props: PaginaDenunciaProps) {
     const refIconeMostrar = useRef(null)
     const sectionRef = useRef(null)
     let nomeUsuario = JSON.parse(localStorage.getItem('usuario')!)
-    nomeUsuario = nomeUsuario.substring(0, nomeUsuario.indexOf(' '))
+    nomeUsuario = nomeUsuario.substring(0, nomeUsuario.indexOf(' ') != -1 ? nomeUsuario.indexOf(' ') : nomeUsuario.length )
 
-    const [denuncias, setDenuncias] = useState(() => {
-        return [{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },{
-            titulo: "Denuncia 1",
-            descricao: "Descricao top da denuncia 1",
-            local: "Rua 1"
-        },]
-    })
+    const [denuncias, setDenuncias] = useState([])
 
     function sair() {
         localStorage.removeItem("usuario")
         alert("Usuario deslogado")
         rota.push("/login")
     }
+
+    useEffect(() => {
+        lerTodasAsDenuncias(setDenuncias)
+    }, [])
 
 
     return (
@@ -177,8 +51,9 @@ export default function PaginaDenuncia(props: PaginaDenunciaProps) {
             </nav>
 
             {fazerDenuncia ? <RegistrarDenuncia/> : <ListaDenuncias titulo={titulo}
-                children={denuncias.map((item, index) => {
-                    return <CardDenuncia local={item.local} key={index} descricao={item.descricao} titulo={item.titulo} />
+                children={denuncias.map((item: any, index: number) => {
+                    return <CardDenuncia local={item.localDenuncia} key={index} descricao={item.descricaoDenuncia
+                    } titulo={item.tituloDenuncia} />
                 })} />}
         </main>
     )
