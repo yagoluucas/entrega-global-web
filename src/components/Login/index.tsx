@@ -33,12 +33,11 @@ export default function Login() {
 
     async function logaUsuario(usuario: string, senha: string) {
         const resposta = await enviarLogin(usuario, senha)
-        console.log(resposta)
-        if (resposta) {
+        if (resposta == "Usuário logado") {
             rota.push(`/denuncias/${usuario}`)
-        } else {
-            alert('Usuário ou senha inválidos')
-        }
+            return
+        } 
+        alert(resposta)
     }
  
     return (

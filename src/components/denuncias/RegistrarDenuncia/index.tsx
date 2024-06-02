@@ -4,8 +4,9 @@ import { validaCampoTexto } from "@/utils"
 import './style.css'
 import BotaoPaginaDenuncia from "../BotaoPaginaDenuncia"
 import { salvarDenuncia } from "./funcoes"
+import { RegistrarDenunciaProps } from "./interface"
 
-export default function RegistrarDenuncia() {
+export default function RegistrarDenuncia(props: RegistrarDenunciaProps) {
 
     const [titulo, setTitulo] = useState('')
     const [descricao, setDescricao] = useState('')

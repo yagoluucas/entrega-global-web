@@ -2,17 +2,23 @@
 import './style.css'
 import { PaginaDenunciaProps } from "./interface";
 import BotaoPaginaDenuncia from "../BotaoPaginaDenuncia";
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { useRouter } from 'next/navigation';
 import ListaDenuncias from "../ListaDenuncias";
 import CardDenuncia from '../CardDenuncia';
 import RegistrarDenuncia from '../RegistrarDenuncia';
 import Image from 'next/image';
+import { todasDenuncias, minhasDenuncias, novaDenuncia, fecharMenu, mostrarMenu } from './funcoes';
 
 export default function PaginaDenuncia(props: PaginaDenunciaProps) {
     const rota = useRouter()
     const [titulo, setTitulo] = useState("Todas denuncias")
     const [fazerDenuncia, setFazerDenuncia] = useState(false)
+    const refMenu = useRef(null)
+    const refIconeMostrar = useRef(null)
+    const sectionRef = useRef(null)
+    let nomeUsuario = JSON.parse(localStorage.getItem('usuario')!)
+    nomeUsuario = nomeUsuario.substring(0, nomeUsuario.indexOf(' '))
 
     const [denuncias, setDenuncias] = useState(() => {
         return [{
@@ -146,39 +152,25 @@ export default function PaginaDenuncia(props: PaginaDenunciaProps) {
         },]
     })
 
-    function todasDenuncias() {
-        setFazerDenuncia(false)
-        setTitulo("Todas denuncias")
-    }
-
-    function minhasDenuncias() {
-        setFazerDenuncia(false)
-        setTitulo("Minhas denuncias")
-    }
-
-    function novaDenuncia() {
-        setFazerDenuncia(false)
-        setTitulo("Nova denuncia")
-        setFazerDenuncia(true)
-    }
-
     function sair() {
         localStorage.removeItem("usuario")
         alert("Usuario deslogado")
         rota.push("/login")
     }
 
+
     return (
         <main className="usuario--logado">
-            <Image className='abrir--menu' src="/arrow-square-right-fill.svg" alt="icone menu" width={40} height={40} />
-            <nav className="navegacao--denuncias abrir">
-                <Image className='icone--fechar' src="/x-square-fill.svg" alt="icone fechar" width={40} height={40} />
+            <Image onClick={() => {mostrarMenu(refMenu)}} className='abrir--menu' src="/arrow-square-right-fill.svg" alt="icone menu" width={40} height={40} />
+
+            <nav ref={refMenu} className="navegacao--denuncias">
+                <Image onClick={() => {fecharMenu(refMenu)}} className='icone--fechar' src="/x-square-fill.svg" alt="icone fechar" width={40} height={40} />
                 <div>
-                    <h1>Olá, {props.usuario}</h1>
+                    <h1>Olá, {nomeUsuario}</h1>
                     <ul>
-                        <li><BotaoPaginaDenuncia onClick={todasDenuncias} texto="Denuncias" /></li>
-                        <li><BotaoPaginaDenuncia onClick={minhasDenuncias} texto="Minhas denuncias" /></li>
-                        <li><BotaoPaginaDenuncia onClick={novaDenuncia} texto="Nova denuncia" /></li>
+                        <li><BotaoPaginaDenuncia onClick={() => {todasDenuncias(setFazerDenuncia, setTitulo, setDenuncias)}} texto="Denuncias" /></li>
+                        <li><BotaoPaginaDenuncia onClick={() => {minhasDenuncias(setFazerDenuncia, setTitulo, setDenuncias)}} texto="Minhas denuncias" /></li>
+                        <li><BotaoPaginaDenuncia onClick={() => {novaDenuncia(setFazerDenuncia, setTitulo)}} texto="Nova denuncia" /></li>
                         <li className="btn--sair"><BotaoPaginaDenuncia onClick={sair} texto="Sair" /></li>
                     </ul>
                 </div>

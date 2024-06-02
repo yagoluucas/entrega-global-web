@@ -15,7 +15,6 @@ main.usuario--logado nav{
     color: #fff;
     width: 25%;
     padding: 1rem 0 1rem 0.7rem;
-    display: flex;
     max-width: 350px;
     flex-direction: column;
     position: sticky;
@@ -29,6 +28,7 @@ main.usuario--logado nav li.btn--sair{
 main.usuario--logado section{
     width: 75%;
     padding: 1rem;
+    margin-left: 5%;
 }
 
 main .navegacao--denuncias img.icone--fechar {
@@ -37,24 +37,26 @@ main .navegacao--denuncias img.icone--fechar {
     align-self: flex-end;
 }
 
-main.usuario--logado img.abrir--menu {
+main .navegacao--denuncias.mostrar {
+    display: flex;
+}
+
+main .navegacao--denuncias.esconder {
     display: none;
 }
 
-@media screen and (max-width:890px) {
-    main .navegacao--denuncias {
-        display: none !important;
+main.usuario--logado img.abrir--menu {
+    cursor: pointer;
+    position: fixed;
+    margin-top: 1rem;
+}
+
+@media screen and (max-width:938px) {
+    main .navegacao--denuncias{
+        display: none;
     }
 
-    main.usuario--logado section {
-        width: 90%;
-        margin-left: 5%;
-    }
-
-    main.usuario--logado img.abrir--menu {
-        display: block;
-        cursor: pointer;
-        position: fixed;
-        margin-top: 1rem;
+    main .navegacao--denuncias.mostrar {
+        width: 100%;
     }
 }
