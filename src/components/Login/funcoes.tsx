@@ -13,7 +13,7 @@ async function enviarLogin(nome: string, senha: string) {
             method: 'GET',
         })
         const res = await response.text()
-        if (res == "Usuário logado") {
+        if (res == "Usuário logado" && typeof window!== 'undefined') {
             localStorage.setItem('usuario', JSON.stringify(usuario.nome))
             return res
         }
