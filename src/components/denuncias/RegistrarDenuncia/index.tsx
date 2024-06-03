@@ -27,7 +27,6 @@ export default function RegistrarDenuncia(props: RegistrarDenunciaProps) {
     }
 
     useEffect(() => {
-        console.log(titulo.length >= 3 && descricao.length >= 3)
         if (titulo.length >= 3 && descricao.length >= 3 && local.length >= 3) {
             setDesativado(false)
         } else {

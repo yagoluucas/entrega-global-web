@@ -16,7 +16,6 @@ async function lerMinhasDenuncias(setDenuncias: any) {
             method: "GET"
         })
         const res = await response.json()
-        console.log(res)
         setDenuncias(res)
     }catch(error) {
         console.log(error)
