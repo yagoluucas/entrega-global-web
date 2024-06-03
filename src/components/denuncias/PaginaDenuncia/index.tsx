@@ -50,11 +50,10 @@ export default function PaginaDenuncia(props: PaginaDenunciaProps) {
                 </div>
             </nav>
 
-            {fazerDenuncia ? <RegistrarDenuncia/> : <ListaDenuncias titulo={titulo}
-                children={denuncias.map((item: any, index: number) => {
+            {fazerDenuncia ? <RegistrarDenuncia/> : <ListaDenuncias titulo={titulo}>{denuncias.map((item: any, index: number) => {
                     return <CardDenuncia local={item.localDenuncia} key={index} descricao={item.descricaoDenuncia
                     } titulo={item.tituloDenuncia} />
-                })} />}
+                })}</ListaDenuncias>}
         </main>
     )
 }
