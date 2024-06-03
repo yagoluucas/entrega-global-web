@@ -3,9 +3,8 @@ import { useRouter } from "next/navigation";
 import LoginDiv from "@/components/Login";
 
 export default function Login() {
-
-    if (localStorage.getItem('usuario') !== null) {
-        const rota = useRouter()
+    const rota = useRouter()
+    if (localStorage.getItem('usuario') !== null) {   
         const usuario = JSON.parse(localStorage.getItem('usuario')!) 
         rota.push(`/denuncias/${usuario}`)
     } else {
