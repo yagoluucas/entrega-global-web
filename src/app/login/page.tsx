@@ -1,6 +1,7 @@
 'use client'
 import { useRouter } from "next/navigation";
 import LoginDiv from "@/components/Login";
+import { useEffect } from from "react";
 
 export default function Login() {
     const rota = useRouter()
