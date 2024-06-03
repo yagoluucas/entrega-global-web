@@ -33,7 +33,7 @@ export default function FormularioDoacao() {
                 <form>
 
                     <label htmlFor="valor">Valor em reais:</label>
-                    <input onChange={(e) => {validaCampoNumero(e)}} onClick={(e) => {colocaValor(e, "valor")}} onKeyUp={(e) => {colocaValor(e, "valor")}} type="number" min={1} placeholder="R$00,00" id="valor" name="valor" required />
+                    <input onChange={(e) => {validaCampoNumero(e)}} onClick={(e) => {colocaValor(e)}} onKeyUp={(e) => {colocaValor(e)}} type="number" min={1} placeholder="R$00,00" id="valor" name="valor" required />
 
                 </form>
                 <button onClick={() => {enviarDoacao(valor)}} disabled={desativado}>Doar</button>
