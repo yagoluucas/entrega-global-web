@@ -14,7 +14,7 @@ export default function SegundaSecao() {
                     <li>Envie a denuncia</li>
                 </ol>
             </div>
-            <Image alt='' src={'/denuncias/fundo-pessoas.png'} width={600} height={600}/>
+            <Image alt='pessoas cuidando do planeta' src={'/denuncias/fundo-pessoas.png'} width={600} height={600}/>
         </section>
     )
 }
