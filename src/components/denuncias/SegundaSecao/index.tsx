@@ -9,7 +9,7 @@ export default function SegundaSecao() {
                 <ol>
                     <li>Acessa a página de <Link href={'/login'}>login</Link></li>
                     <li>Caso não tenha conta, será necessário criar uma</li>
-                    <li>Após o login, clique em "Denunciar"</li>
+                    <li>Após o login, clique em &quot;Denunciar&quot;</li>
                     <li>Preencha o formulário com as informações necessárias</li>
                     <li>Envie a denuncia</li>
                 </ol>
