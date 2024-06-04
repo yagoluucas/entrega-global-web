@@ -15,8 +15,6 @@ export default function PaginaDenuncia(props: PaginaDenunciaProps) {
     const [titulo, setTitulo] = useState("Todas denuncias")
     const [fazerDenuncia, setFazerDenuncia] = useState(false)
     const refMenu = useRef(null)
-    const refIconeMostrar = useRef(null)
-    const sectionRef = useRef(null)
     let nomeUsuario = JSON.parse(localStorage.getItem('usuario')!)
     nomeUsuario = nomeUsuario.substring(0, nomeUsuario.indexOf(' ') != -1 ? nomeUsuario.indexOf(' ') : nomeUsuario.length)
 

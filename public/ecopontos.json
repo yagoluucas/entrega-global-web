@@ -736,10 +736,4 @@
 	"cep": "02652-170",
 	"endereco": "Rua Dom Aquino, nº 103",
 	"recebeGesso": false
-}, {
-	"ecoponto": "São Leandro",
-	"bairro": "Vila Palmeiras",
-	"cep": "02725-010",
-	"endereco": "Rua São Leandro, nº 13",
-	"recebeGesso": false
 }]

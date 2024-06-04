@@ -1,7 +1,6 @@
 async function enviarDoacao(valor: string) {
     try {
-        console.log(JSON.stringify(localStorage.getItem('usuario')))
-        const nomeUsuario = JSON.stringify(localStorage.getItem('usuario')) === null ? null: JSON.stringify(localStorage.getItem('usuario'))
+        const nomeUsuario = JSON.parse(localStorage.getItem('usuario')!)
         const response = await fetch(`http://localhost:8080/doacao?nome=${nomeUsuario}`, {
             method: "POST",
             headers: {

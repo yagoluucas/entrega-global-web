@@ -1,5 +1,7 @@
 import Botao from "../Botao";
 import './style.css'
+
+// componente responsável por renderizar a primeira seção da primeira página
 export default function PrimeiraSecao() {
     return (
         <section className="primeira--secao">

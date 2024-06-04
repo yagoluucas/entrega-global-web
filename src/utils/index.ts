@@ -36,6 +36,46 @@ export function validaCampoNumero (e: any) {
     
 }
 
+function criarImagemResultado(src:string, alt:string) {
+    const img = document.createElement('img')
+    img.classList.add('resultado--imagem')
+    img.src = src
+    img.alt = alt
+    return img
+}
+
+function criarParagrafoResultado(textoParagrafo:string) {
+    const p = document.createElement('p')
+    p.classList.add('resultado--texto')
+    p.textContent = textoParagrafo
+    return p
+}
+
+function criarImgFecharResultado() {
+    const imgFechar = document.createElement('img')
+    imgFechar.classList.add('icone-fechar')
+    imgFechar.src = '/fechar.webp'
+    imgFechar.alt = 'Fechar'
+    return imgFechar
+}
+
+function criarDivResultado(src:string, alt:string, textoParagrafo:string, classeResultado:string) {
+    const imgMeio = criarImagemResultado(src, alt)
+    const paragrafo = criarParagrafoResultado(textoParagrafo)
+    const imgFechar = criarImgFecharResultado()
+    const div = document.createElement('div')
+    div.append(imgFechar, imgMeio, paragrafo)
+    div.classList.add('resultado')
+    div.classList.add(classeResultado)
+    return div
+}
+
+export function mostrarResultado(src:string, alt:string, textoParagrafo:string, classeResultado:string) {
+    const divResultado = criarDivResultado(src, alt, textoParagrafo, classeResultado)
+    const main = document.querySelector('main')
+    main?.appendChild(divResultado)
+}    
+
 function setarCampoInvalido(elemento: any) {
     elemento.classList.add('invalido')
     elemento.classList.remove('valido')

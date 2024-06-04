@@ -1,5 +1,7 @@
 import CardNoticia from "../CardNoticia";
 import './style.css'
+
+// componente responsável por renderizar a segunda seção da primeira página
 export default function SegundaSecao() {
     return (
         <section className="segunda--secao">

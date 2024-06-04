@@ -10,6 +10,18 @@ main.doacao section.info--doacao p {
     font-size: 1.1rem;
 }
 
+main.doacao section.info--doacao a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    transition: 0.3s;
+}
+
+main.doacao section.info--doacao a:hover::after {
+    content: ' →';  
+}
+
 @media (max-width: 860px) {
     main.doacao section.info--doacao {
         width: 100%;

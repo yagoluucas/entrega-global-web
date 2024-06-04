@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 import { enviarDoacao } from './funcoes'
 import './style.css'
 
-
+//  componente responsável por renderizar o formulário de doação
 export default function FormularioDoacao() {
 
 

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Botao from "../Botao";
 import './style.css'
+
+// componente responsável por renderizar a quinta seção da primeira página
 export default function QuintaSecao() {
     return (
         <section className="quinta--secao">

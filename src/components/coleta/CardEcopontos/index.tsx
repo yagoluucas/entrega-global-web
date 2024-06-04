@@ -2,6 +2,7 @@ import { ecopontos } from "@/interfaces/interface";
 import Image from "next/image";
 import './style.css';
 
+// cada card de ecopontos é renderizado por este componente
 export default function CardEcopontos(props: ecopontos) {
     return (
         <div className="card--ecoponto" key={props.key}>

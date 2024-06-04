@@ -6,7 +6,9 @@ import { useState, useEffect } from 'react'
 import BotaoCadastro from '../BotaoCadastro'
 import { validaCampoTexto } from "@/utils";
 import { enviarLogin } from './funcoes'
+import {mostrarResultado} from '@/utils'
 
+// componente responsável por renderizar o formulário de login
 export default function Login() {
 
     const [usuario, setUsuario] = useState('')
@@ -34,7 +36,8 @@ export default function Login() {
     async function logaUsuario(usuario: string, senha: string) {
         const resposta = await enviarLogin(usuario, senha)
         if (resposta == "Usuário logado") {
-            rota.push(`/denuncias/${usuario}`)
+            mostrarResultado('/sinal-certo.webp','sinal certo', 'Login efetuado com sucesso', 'sucesso')
+            // rota.push(`/denuncias/${usuario}`)
             return
         } 
         alert(resposta)
