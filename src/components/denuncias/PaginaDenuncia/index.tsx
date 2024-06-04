@@ -47,13 +47,11 @@ export default function PaginaDenuncia() {
                 </div>
             </nav>
 
-            {fazerDenuncia ? <RegistrarDenuncia /> : <ListaDenuncias titulo={titulo}
-                children={denuncias.length >= 1 ? denuncias.map((item: any, index: number) => {
+            {fazerDenuncia ? <RegistrarDenuncia/> : <ListaDenuncias titulo={titulo}
+                children={denuncias.map((item: any, index: number) => {
                     return <CardDenuncia local={item.localDenuncia} key={index} descricao={item.descricaoDenuncia
                     } titulo={item.tituloDenuncia} />
-                }) : <h2>
-                    Não há denuncias
-                </h2>} />}
+                })} />}
         </main>
     )
 }
