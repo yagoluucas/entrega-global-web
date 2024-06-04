@@ -10,13 +10,16 @@ import RegistrarDenuncia from '../RegistrarDenuncia';
 import Image from 'next/image';
 import { todasDenuncias, minhasDenuncias, novaDenuncia, fecharMenu, mostrarMenu, lerTodasAsDenuncias } from './funcoes';
 
-export default function PaginaDenuncia() {
+export default function PaginaDenuncia(props: PaginaDenunciaProps) {
     const rota = useRouter()
     const [titulo, setTitulo] = useState("Todas denuncias")
     const [fazerDenuncia, setFazerDenuncia] = useState(false)
     const refMenu = useRef(null)
+    const refIconeMostrar = useRef(null)
+    const sectionRef = useRef(null)
     let nomeUsuario = JSON.parse(localStorage.getItem('usuario')!)
     nomeUsuario = nomeUsuario.substring(0, nomeUsuario.indexOf(' ') != -1 ? nomeUsuario.indexOf(' ') : nomeUsuario.length)
+
     const [denuncias, setDenuncias] = useState([])
 
     function sair() {
@@ -47,11 +50,10 @@ export default function PaginaDenuncia() {
                 </div>
             </nav>
 
-            {fazerDenuncia ? <RegistrarDenuncia/> : <ListaDenuncias titulo={titulo}
-                children={denuncias.map((item: any, index: number) => {
-                    return <CardDenuncia local={item.localDenuncia} key={index} descricao={item.descricaoDenuncia
-                    } titulo={item.tituloDenuncia} />
-                })} />}
+            {fazerDenuncia ? <RegistrarDenuncia /> : <ListaDenuncias titulo={titulo}>{denuncias.map((item: any, index: number) => {
+                return <CardDenuncia local={item.localDenuncia} key={index} descricao={item.descricaoDenuncia
+                } titulo={item.tituloDenuncia} />
+            })}</ListaDenuncias>}
         </main>
     )
 }
