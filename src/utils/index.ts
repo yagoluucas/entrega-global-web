@@ -56,24 +56,32 @@ function criarImgFecharResultado() {
     imgFechar.classList.add('icone-fechar')
     imgFechar.src = '/fechar.webp'
     imgFechar.alt = 'Fechar'
+    imgFechar.addEventListener('click', fecharResultado)
     return imgFechar
 }
 
-function criarDivResultado(src:string, alt:string, textoParagrafo:string, classeResultado:string) {
+function criarDivResultado(src:string, alt:string, textoParagrafo:string, classeResultado:string, flag: string) {
     const imgMeio = criarImagemResultado(src, alt)
     const paragrafo = criarParagrafoResultado(textoParagrafo)
-    const imgFechar = criarImgFecharResultado()
     const div = document.createElement('div')
-    div.append(imgFechar, imgMeio, paragrafo)
+    div.append(flag == "doacao" ? criarImgFecharResultado() : "", imgMeio, paragrafo)
     div.classList.add('resultado')
     div.classList.add(classeResultado)
     return div
 }
 
-export function mostrarResultado(src:string, alt:string, textoParagrafo:string, classeResultado:string) {
-    const divResultado = criarDivResultado(src, alt, textoParagrafo, classeResultado)
+function fecharResultado(e: any) {
+    const resultado = e.target.parentElement
+    resultado.remove()
+}
+
+export function mostrarResultado(src:string, alt:string, textoParagrafo:string, classeResultado:string, flag: string, timer: number) {
+    const divResultado = criarDivResultado(src, alt, textoParagrafo, classeResultado, flag)
     const main = document.querySelector('main')
     main?.appendChild(divResultado)
+    setTimeout(() => {
+        divResultado.remove()
+    }, timer)
 }    
 
 function setarCampoInvalido(elemento: any) {

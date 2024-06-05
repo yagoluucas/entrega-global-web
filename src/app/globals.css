@@ -63,12 +63,12 @@ div.resultado::after {
 
 div.resultado.sucesso::after {
   background: #0E9024;
-  animation: anim 9s linear forwards;
+  animation: anim 3s linear forwards;
 }
 
 div.resultado.falha::after {
   background: #FF0000;
-  animation: anim 4s linear forwards;
+  animation: anim 3s linear forwards;
 }
 
 @keyframes anim {
@@ -88,6 +88,7 @@ div.resultado.falha::after {
       opacity: 1;
   }
 }
+
 
 @media screen and (max-width:768px) {
   div.resultado {

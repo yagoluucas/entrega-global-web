@@ -35,7 +35,6 @@ export default function CadastroSection() {
         <section className="cadastro">
             <div>
                 <h1>Crie a sua conta</h1>
-                <h2>Crie sua conta para acessar e registrar denúncias</h2>
             </div>
             <form className="form--cadastro">
                 <label htmlFor="nome">Nome:</label>

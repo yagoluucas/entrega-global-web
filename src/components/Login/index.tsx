@@ -34,13 +34,16 @@ export default function Login() {
 
 
     async function logaUsuario(usuario: string, senha: string) {
-        const resposta = await enviarLogin(usuario, senha)
+        const resposta: any = await enviarLogin(usuario, senha)
         if (resposta == "Usuário logado") {
-            mostrarResultado('/sinal-certo.webp','sinal certo', 'Login efetuado com sucesso', 'sucesso')
-            // rota.push(`/denuncias/${usuario}`)
+            mostrarResultado('/sinal-certo.webp','sinal certo', 'Login efetuado com sucesso', 'sucesso', 'login', 3000)
+            setTimeout(() => {
+                rota.push(`/denuncias/${usuario}`)
+            }, 3000)
             return
         } 
-        alert(resposta)
+        
+        mostrarResultado('/sinal-errado.webp','sinal errado', resposta, 'falha', 'login', 3000)
     }
  
     return (

@@ -8,17 +8,15 @@ export default function Login() {
 
 
     useEffect(() => {
-        if (localStorage.getItem('usuario')!== null) {
+        if (localStorage.getItem('usuario') !== null) {
             const usuario = JSON.parse(localStorage.getItem('usuario')!);
             rota.push(`/denuncias/${usuario}`);
         }
     }, []);
 
     return (
-            <main>
-                <LoginDiv />
-            </main>
-        )
-
-    
+        <main>
+            <LoginDiv />
+        </main>
+    )
 }
