@@ -4,7 +4,9 @@ import { pegueTodasEmpresas } from './funcoes'
 import { DataCompanias } from './interface'
 export default function Companias() {
 
-    const [companias, setCompanias] = useState([])
+    const [companias, setCompanias] = useState({
+        data: []
+    })
 
     async function pegueAsCompanias() {
         setCompanias(await pegueTodasEmpresas())
