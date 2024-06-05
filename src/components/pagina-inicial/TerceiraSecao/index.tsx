@@ -5,8 +5,10 @@ import './style.css'
 export default function TerceiraSecao() {
     return (
         <section className="terceira--secao">
-            <Image src={'/pagina-inicial/microplastico.png'} alt="Dedo com vários microplasticos" width={400} height={500}/>
-            <div>
+            <div className="img">
+                <Image src={'/pagina-inicial/microplastico.png'} alt="Dedo com vários microplasticos" width={600} height={600}/>
+            </div>
+            <div className="info">
                 <h2>
                     O Impacto dos Microplásticos no Meio Ambiente
                 </h2>

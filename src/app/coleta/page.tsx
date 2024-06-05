@@ -1,14 +1,16 @@
 'use client'
 import CardEcopontos from "@/components/coleta/CardEcopontos"
 import '@/styles/ecopontos.css'
-import { ecopontos } from "@/interfaces/interface"
+import { EcopontosInterface } from "@/interfaces/interface"
 import { useEffect, useState } from "react"
+import Loading from "@/components/Loading"
+import Error from "@/components/Erro"
 
 
 
 export default function Coleta() {
-
-    const [data, setData] = useState<ecopontos[]>([])
+    const [carregando, setCarregando] = useState(true)
+    const [data, setData] = useState<EcopontosInterface[]>([])
     const [error, setError] = useState(false)
 
     async function getInfoEcopontos() {
@@ -18,23 +20,30 @@ export default function Coleta() {
             })
             const data = await result.json()
             setData(data)
+            
         } catch (error) {
             setError(true)
         }
+        setCarregando(false)
     }
 
     useEffect(() => {
         getInfoEcopontos()
     }, [])
 
-    if (error) {
+    if(carregando) {
         return (
-            <h1>
-                error
-            </h1>
+            <Loading />
         )
     }
-    
+
+
+    if (error) {
+        return (
+            <Error />
+        )
+    }
+
     return (
         <main className="ecopontos">
             <section className="lista--ecopontos">

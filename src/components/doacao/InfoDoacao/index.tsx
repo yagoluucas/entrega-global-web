@@ -7,7 +7,6 @@ export default function InfoDoacao(props: InfoDoacaoProps) {
         <section className='info--doacao'>
             <h2>{props.titulo}</h2>
             <p>{props.texto}</p>
-            {props.children}
         </section>
     )
 }

@@ -1,4 +1,4 @@
-interface ecopontos{
+interface EcopontosInterface{
     ecoponto: string,
 	bairro: string,
 	cep: string,
@@ -9,4 +9,4 @@ interface ecopontos{
 	enderecoCompleto: string
 }
 
-export type {ecopontos}
+export type {EcopontosInterface}

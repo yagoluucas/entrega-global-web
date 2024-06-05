@@ -6,8 +6,10 @@ import './style.css'
 export default function QuartaSecao(){
     return (
         <section className="quarta--secao">
-            <Image src={'/pagina-inicial/img-denuncia.png'} alt="Praia com vários lixos na areia" width={400} height={600}/>
-            <div>
+            <div className="img">
+                <Image src={'/pagina-inicial/img-denuncia.png'} alt="Praia com vários lixos na areia" width={600} height={600}/>
+            </div>
+            <div className="info">
                 <h2>
                     Denuncie maus tratos à vida marinha!
                 </h2>
