@@ -49,5 +49,6 @@ function mostrarMenu(navMenu:any) {
     navMenu.current?.classList.remove('esconder')
 }
 
+
 export { todasDenuncias, minhasDenuncias, novaDenuncia, fecharMenu, mostrarMenu, lerTodasAsDenuncias }
 

@@ -47,7 +47,7 @@ function criarImagemResultado(src:string, alt:string) {
 function criarParagrafoResultado(textoParagrafo:string) {
     const p = document.createElement('p')
     p.classList.add('resultado--texto')
-    p.textContent = textoParagrafo
+    p.innerHTML = textoParagrafo
     return p
 }
 
@@ -79,9 +79,11 @@ export function mostrarResultado(src:string, alt:string, textoParagrafo:string, 
     const divResultado = criarDivResultado(src, alt, textoParagrafo, classeResultado, flag)
     const main = document.querySelector('main')
     main?.appendChild(divResultado)
-    setTimeout(() => {
-        divResultado.remove()
-    }, timer)
+    if(flag != "doacao") {
+        setTimeout(() => {
+            divResultado.remove()
+        }, timer)
+    } 
 }    
 
 function setarCampoInvalido(elemento: any) {

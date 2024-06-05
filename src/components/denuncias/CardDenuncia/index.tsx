@@ -12,7 +12,7 @@ export default function CardDenuncia(props: CardDenunciaProps) {
             </p>
 
             <p className='local'>
-                Local: {props.local}
+                <span>Local:</span> {props.local}
             </p>
         </div>
     )

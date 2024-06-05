@@ -26,3 +26,8 @@ section.lista--denuncia div.card--denuncia .local {
     font-size: 0.875rem;
     line-height: 1.25rem;
 }
+
+section.lista--denuncia div.card--denuncia .local span {
+    font-weight: 600;
+    color: #000;
+}

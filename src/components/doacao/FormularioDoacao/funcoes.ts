@@ -1,3 +1,4 @@
+import { mostrarResultado } from "@/utils"
 async function enviarDoacao(valor: string) {
     try {
         const nomeUsuario = JSON.parse(localStorage.getItem('usuario')!)
@@ -9,9 +10,9 @@ async function enviarDoacao(valor: string) {
             body: JSON.stringify({valor})
         })
         const res = await response.text()
-        console.log(res)
+        mostrarResultado(res, 'Sucesso', 'Por favor, escaneie o QR code acima para realizar o pagamento', 'sucesso', 'doacao', 0)
     }catch(error) {
-        console.log(error)
+        mostrarResultado('/sinal-errado.webp', 'Erro', 'Erro ao enviar doação', 'erro', 'doacao', 3000)
     }
 }
 

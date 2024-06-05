@@ -1,3 +1,4 @@
+import { mostrarResultado } from "@/utils"
 function construirDenuncia(titulo: string, local: string, descricao: string) {
     return {
         tituloDenuncia: titulo,
@@ -17,7 +18,7 @@ async function salvarDenuncia(titulo: string, local: string, descricao: string) 
             body: JSON.stringify(denuncia)
         })
         const res = await response.text()
-        console.log(res)
+        mostrarResultado('/sinal-certo.webp', 'Sucesso', 'Denuncia enviada com sucesso', 'sucesso', 'denuncia', 3000)
     } catch (error) {
         console.log(error)
     }

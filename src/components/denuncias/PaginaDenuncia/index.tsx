@@ -9,6 +9,7 @@ import CardDenuncia from '../CardDenuncia';
 import RegistrarDenuncia from '../RegistrarDenuncia';
 import Image from 'next/image';
 import { todasDenuncias, minhasDenuncias, novaDenuncia, fecharMenu, mostrarMenu, lerTodasAsDenuncias } from './funcoes';
+import { mostrarResultado } from '@/utils';
 
 export default function PaginaDenuncia(props: PaginaDenunciaProps) {
     const rota = useRouter()
@@ -20,16 +21,17 @@ export default function PaginaDenuncia(props: PaginaDenunciaProps) {
 
     const [denuncias, setDenuncias] = useState([])
 
-    function sair() {
-        localStorage.removeItem("usuario")
-        alert("Usuario deslogado")
-        rota.push("/login")
-    }
-
     useEffect(() => {
         lerTodasAsDenuncias(setDenuncias)
     }, [])
 
+    function sair() {
+        localStorage.removeItem("usuario")
+        mostrarResultado('/sinal-certo.webp', 'Sucesso', 'Usuário deslogado', 'sucesso', 'login', 3000)
+        setTimeout(() => {
+            rota.push("/login")
+        }, 3000)
+    }
 
     return (
         <main className="usuario--logado">

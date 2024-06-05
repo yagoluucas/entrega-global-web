@@ -18,7 +18,7 @@ async function enviarCadastro(nome: string, email: string, senha: string) {
             body: JSON.stringify(cadastro)
         })
         const res = await response.text()
-        mostrarResultado(res == "Sucesso ao adicionar usuario" ? '/sinal-certo.webp' : '/sinal-errado.webp' ,'sinal resposta', res, res == "Sucesso ao adicionar usuario" ? 'sucesso' : 'falha', 'cadastro', 3500)
+        mostrarResultado(res == "Sucesso ao adicionar usuario" ? '/sinal-certo.webp' : '/sinal-errado.webp' ,'sinal resposta', res.concat('<br>Retorne para página de login'), res == "Sucesso ao adicionar usuario" ? 'sucesso' : 'falha', 'cadastro', 3500)
     } catch (error) {
         mostrarResultado('/sinal-errado.webp','sinal resposta', 'Erro. Tenta novamente mais tarde', 'falha', 'cadastro', 3000)
     }
