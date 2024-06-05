@@ -35,11 +35,11 @@ export default function PaginaDenuncia(props: PaginaDenunciaProps) {
         <main className="usuario--logado">
             <Image onClick={() => { mostrarMenu(refMenu) }} className='abrir--menu' src="/arrow-square-right-fill.svg" alt="icone menu" width={40} height={40} />
 
-            <nav ref={refMenu} className="navegacao--denuncias">
+            <nav ref={refMenu} className="navegacao--denuncias mostrar">
                 <Image onClick={() => { fecharMenu(refMenu) }} className='icone--fechar' src="/x-square-fill.svg" alt="icone fechar" width={40} height={40} />
                 <div>
                     <h1>Olá, {nomeUsuario}</h1>
-                    <ul>
+                    <ul className='flex flex-col'>
                         <li><BotaoPaginaDenuncia onClick={() => { todasDenuncias(setFazerDenuncia, setTitulo, setDenuncias) }} texto="Denuncias" /></li>
                         <li><BotaoPaginaDenuncia onClick={() => { minhasDenuncias(setFazerDenuncia, setTitulo, setDenuncias) }} texto="Minhas denuncias" /></li>
                         <li><BotaoPaginaDenuncia onClick={() => { novaDenuncia(setFazerDenuncia, setTitulo) }} texto="Nova denuncia" /></li>

@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import './style.css'
 import Image from 'next/image'
+import logo from './logo.png'
 export default function Footer() {
     return (
         <footer>
@@ -22,7 +23,7 @@ export default function Footer() {
             </nav>
 
             <section className='alunos'>
-                <Image src={'/logo.png'} alt="Logo da empresa" width={80} height={80} />
+                <Image src={logo.src} alt="Logo da empresa" width={80} height={80} />
                 <p>© 2024 MR.turtle - Todos os direitos reservados</p>
                 <ul>
                     <li>Nome: Yago Lucas rm: 5503013 turma : 1TDSPC</li>

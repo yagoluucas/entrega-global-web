@@ -9,6 +9,7 @@ import { useEffect, useState } from "react"
 export default function Coleta() {
 
     const [data, setData] = useState<ecopontos[]>([])
+    const [error, setError] = useState(false)
 
     async function getInfoEcopontos() {
         try {
@@ -18,7 +19,7 @@ export default function Coleta() {
             const data = await result.json()
             setData(data)
         } catch (error) {
-            console.log(error)
+            setError(true)
         }
     }
 
@@ -26,7 +27,14 @@ export default function Coleta() {
         getInfoEcopontos()
     }, [])
 
-
+    if (error) {
+        return (
+            <h1>
+                error
+            </h1>
+        )
+    }
+    
     return (
         <main className="ecopontos">
             <section className="lista--ecopontos">

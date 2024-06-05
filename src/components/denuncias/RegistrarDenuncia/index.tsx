@@ -39,12 +39,12 @@ export default function RegistrarDenuncia(props: RegistrarDenunciaProps) {
             <h2>Registrar Denúncia</h2>
             <form>
                 <div>
-
+                    
                     <label htmlFor="titulo">Titulo da denuncia</label>
                     <input onKeyUp={(e) => { validaCampoTexto(e) }} onChange={(e) => { setaValorCampo(e, "titulo") }} type="text" placeholder="Titulo" name="titulo" id="titulo" />
 
                     <label htmlFor="local">Local:</label>
-                    <input onKeyUp={(e) => { validaCampoTexto(e) }} onChange={(e) => {setaValorCampo(e, "local")}} type="text" placeholder="Ex: Praia Grande" name="local" id="local" />
+                    <input onKeyUp={(e) => { validaCampoTexto(e) }} onChange={(e) => { setaValorCampo(e, "local") }} type="text" placeholder="Ex: Praia Grande" name="local" id="local" />
 
                 </div>
 

@@ -4,13 +4,13 @@ import Link from "next/link";
 import './style.css'
 import logo from './logo.png'
 import './navegacao-mobile.css'
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, useState } from "react";
 import { usePathname } from 'next/navigation'
 
 export default function Header(){
 
     const path = usePathname();
-
+    const [tituloEntrar, setTituloEntrar] = useState('Entrar');
     const navRef = useRef<HTMLElement>(null);
 
     function abrirMenu(e: any) {
@@ -28,6 +28,12 @@ export default function Header(){
         navRef.current?.classList.add('esconder');
     }, [path])
 
+    useEffect(() => {
+        if (localStorage.getItem('usuario') !== null) {
+            setTituloEntrar('Conta');
+        }
+    }, [path])
+
     return (
         <header>
             <Link href={'/'}>
@@ -42,7 +48,7 @@ export default function Header(){
                     <li><Link href={'/doacao'}>Doe</Link></li>
                     <li>
                         <Link className="link--login" href={'/login'}>
-                            <Image alt="icone de login" width={25} height={25} src={'/user.svg'}/> Entrar
+                            <Image alt="icone de login" width={25} height={25} src={'/user.svg'}/> {tituloEntrar}
                         </Link>
                     </li>
                 </ul>
