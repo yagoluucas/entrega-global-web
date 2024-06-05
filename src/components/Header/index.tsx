@@ -2,6 +2,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import './style.css'
+import logo from './logo.png'
 import './navegacao-mobile.css'
 import { useRef, useEffect } from "react";
 import { usePathname } from 'next/navigation'
@@ -30,7 +31,7 @@ export default function Header(){
     return (
         <header>
             <Link href={'/'}>
-                <Image src={'/logo.png'} alt="Logo da empresa" width={80} height={80}/>
+                <Image src={logo.src} alt="Logo da empresa" width={80} height={80}/>
             </Link>
 
             <Image onClick={(e) => {abrirMenu(e)}} src={'/menu.svg'} alt="Menu de navegação" width={45} height={45} className="menu--mobile mostrar--menu"/>

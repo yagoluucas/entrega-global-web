@@ -8,6 +8,10 @@ interface DataCompanias{
 interface ContactCompanias{
     email:string,
     country:string,
-}  
+}
 
-export type {DataCompanias}
+interface CompaniasProps{
+    data:DataCompanias[]
+}
+
+export type {DataCompanias, CompaniasProps}
