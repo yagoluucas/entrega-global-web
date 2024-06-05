@@ -1,9 +1,9 @@
-import { ecopontos } from "@/interfaces/interface";
+import { EcopontosInterface } from "@/interfaces/interface";
 import Image from "next/image";
 import './style.css';
 
 // cada card de ecopontos é renderizado por este componente
-export default function CardEcopontos(props: ecopontos) {
+export default function CardEcopontos(props: EcopontosInterface) {
     return (
         <div className="card--ecoponto" key={props.key}>
             <Image src={props.imagem} width={400} height={300} alt="Fachada de local do ecoponto" />
