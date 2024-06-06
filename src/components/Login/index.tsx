@@ -53,7 +53,7 @@ export default function Login() {
         <section className="login-container">
             <form className="login-form">
                 <h1>Login</h1>
-                <h2 className="subtitulo">Logar com a sua conta</h2>
+                <h2 className="subtitulo">Entrar na sua conta</h2>
                 <div className="credenciais">
                     <input onKeyDown={(e) => {validaCampoTexto(e)}} onKeyUp={(e) => {colocaValor(e, 'usuario')}} placeholder="Usuário" id="usuario" type="text" />
                     <input onKeyDown={(e) => {validaCampoTexto(e)}} onKeyUp={(e) => {colocaValor(e, 'senha')}} placeholder="senha" name="senha" id="senha" type="password" />

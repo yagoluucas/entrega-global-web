@@ -20,7 +20,7 @@ export default function QuintaSecao() {
                     <Image alt="uma tartaruga no oceano" src={'/pagina-inicial/doacao-Tartaruga.webp'} width={400} height={300} />
                     <div className="conteudo">
                         <h2>Doe para uma Instituição</h2>
-                        <p>A MR.Turtle liga você de empresas que promove a saúde dos oceanos</p>
+                        <p>A MR.Turtle liga você a empresas que promove a saúde dos oceanos</p>
                         <Botao textoBotao="Doe" tamanho="small" linkBotao="/doacao" />
                     </div>
                 </section>
