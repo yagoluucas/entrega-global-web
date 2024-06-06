@@ -12,6 +12,7 @@ export default function CadastroSection() {
     const [nome, setNome] = useState('')
     const [email, setEmail] = useState('')
     const [senha, setSenha] = useState('')
+    const [textobtn, setTextoBtn] = useState('Cadastrar')
 
     function setaValorCampo(e: any, tipo: string) {
         if (tipo == 'nome') {
@@ -44,7 +45,7 @@ export default function CadastroSection() {
                 <label htmlFor="senha">Senha:</label>
                 <input onKeyDown={(e) => {validaCampoTexto(e)}} onKeyUp={(e) => {setaValorCampo(e, "senha")}} type="password" id="senha" placeholder="Senha*" name="senha" required />
             </form>
-            <BotaoCadastro texto='Cadastrar' desativado={desativado} onClick={() => {enviarCadastro(nome, email, senha)}} />
+            <BotaoCadastro texto={textobtn} desativado={desativado} onClick={() => {enviarCadastro(nome, email, senha, setTextoBtn)}} />
             <span>Já tem uma conta ? <Link href={'/login'}>Entrar</Link></span>
         </section>
     )

@@ -1,4 +1,6 @@
 import './style.css';
+
+// componente responsável por mostrar um carregamento na tela
 export default function Loading() {
     return (
         <section className='secao--carregamento'>

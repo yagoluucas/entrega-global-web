@@ -12,7 +12,7 @@ export default function QuintaSecao() {
                     <div className="conteudo">
                         <h2>Seja um Turtle</h2>
                         <p>Junte-se a nós na proteção dos oceanos: cadastre-se agora e faça parte da mudança!</p>
-                        <Botao textoBotao="Cadastrar" tamanho="small" linkBotao="/login" />
+                        <Botao textoBotao="Cadastrar" tamanho="small" linkBotao="/cadastro" />
                     </div>
                 </section>
 

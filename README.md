@@ -6,10 +6,12 @@ Nela será possível registrar denuncias de maus tratos ao oceano e ao meio ambi
 
 ## Integração com o Backend
 
-Nosso projeto está integrado com o back-end desenvolvido em java, por este motivo, é possível criar, ler deletar informações
+Nosso projeto está integrado com o back-end desenvolvido em java, por este motivo, é possível criar e ler informações
 
 ## 
 
 ## Links uteis 
 Link do repositório : https://github.com/yagoluucas/entrega-global-web
 Link do vídeo : 
+Link do repositório Java : https://github.com/yagoluucas/java-global
+Link da vercel: https://mrturttle.vercel.app/

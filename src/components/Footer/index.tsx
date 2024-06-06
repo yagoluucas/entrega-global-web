@@ -2,6 +2,8 @@ import Link from 'next/link'
 import './style.css'
 import Image from 'next/image'
 import logo from './logo.png'
+
+// footer da nossa aplicação que está disponível em todas as páginas
 export default function Footer() {
     return (
         <footer>

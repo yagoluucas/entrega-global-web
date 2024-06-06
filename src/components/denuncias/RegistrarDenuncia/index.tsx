@@ -12,6 +12,7 @@ export default function RegistrarDenuncia(props: RegistrarDenunciaProps) {
     const [descricao, setDescricao] = useState('')
     const [local, setLocal] = useState('')
     const [desativado, setDesativado] = useState(true)
+    const [textoBtn, setTextoBtn] = useState('Registrar Denuncia')
 
     function setaValorCampo(e: any, tipo: string) {
         switch (tipo) {
@@ -51,7 +52,7 @@ export default function RegistrarDenuncia(props: RegistrarDenunciaProps) {
                 <textarea onKeyUp={(e) => { validaCampoTexto(e) }} onChange={(e) => { setaValorCampo(e, "descricao") }} maxLength={200} minLength={4} placeholder="Descrição"></textarea>
             </form>
 
-            <BotaoPaginaDenuncia onClick={() => { salvarDenuncia(titulo, local, descricao) }} desabilitado={desativado} texto="Registrar Denuncia" />
+            <BotaoPaginaDenuncia onClick={() => { salvarDenuncia(titulo, local, descricao, setTextoBtn) }} desabilitado={desativado} texto={textoBtn} />
         </section>
     )
 }
