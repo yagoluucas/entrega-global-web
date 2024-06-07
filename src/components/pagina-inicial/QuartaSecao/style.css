@@ -7,7 +7,7 @@ main.pagina--principal section.quarta--secao {
 }
 
 main.pagina--principal section.quarta--secao div.img img{
-    max-width: 100%;
+    width: 100%;
 }
 
 main.pagina--principal section.quarta--secao div.info {
@@ -40,13 +40,11 @@ main.pagina--principal section.quarta--secao div p {
         justify-content: center;
     }
 
-    main.pagina--principal section.quarta--secao img {
+    main.pagina--principal section.quarta--secao div.img {
         width: 100%;
-        height: 60vh;
-        max-width: 768px;
     }
 
-    main.pagina--principal section.quarta--secao div {
+    main.pagina--principal section.quarta--secao div.info {
         width: 100%;
         margin-bottom: 1.5rem;
     }

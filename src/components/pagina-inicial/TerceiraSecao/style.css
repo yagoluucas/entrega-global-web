@@ -34,18 +34,15 @@ main.pagina--principal section.terceira--secao div p {
         justify-content: center;
     }
 
-    main.pagina--principal section.terceira--secao img {
-        width: 100%;
-        height: 60vh;
-        max-width: 768px;
-    }
-
-    main.pagina--principal section.terceira--secao div {
-        width: 100%;
+    main.pagina--principal section.terceira--secao div.img {
+        width: 100% !important;
         order: -1;
         margin-bottom: 1.5rem;
     }
 
+    main.pagina--principal section.terceira--secao div.info {
+        margin-left: 0;
+    }
     main.pagina--principal section.terceira--secao div h2 {
         font-size: 2rem;
     }
