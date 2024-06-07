@@ -12,6 +12,6 @@ Nosso projeto está integrado com o back-end desenvolvido em java, por este moti
 
 ## Links uteis 
 Link do repositório : https://github.com/yagoluucas/entrega-global-web
-Link do vídeo : 
+Link do vídeo : https://www.youtube.com/watch?v=QZpQeWLiQ20
 Link do repositório Java : https://github.com/yagoluucas/java-global
 Link da vercel: https://mrturttle.vercel.app/
