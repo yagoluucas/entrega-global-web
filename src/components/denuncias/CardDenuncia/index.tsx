@@ -1,5 +1,7 @@
 import './style.css'
 import { CardDenunciaProps } from './interface'
+
+// Card resposável por renderizar uma denuncia
 export default function CardDenuncia(props: CardDenunciaProps) {
     return (
         <div className="card--denuncia">

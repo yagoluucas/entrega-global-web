@@ -1,5 +1,6 @@
 import { mostrarResultado } from "@/utils"
-async function enviarDoacao(valor: string) {
+async function enviarDoacao(valor: string, setTextoBtn: Function) {
+    setTextoBtn('Aguarde...')
     try {
         const nomeUsuario = JSON.parse(localStorage.getItem('usuario')!)
         const response = await fetch(`http://localhost:8080/doacao?nome=${nomeUsuario}`, {
@@ -14,6 +15,7 @@ async function enviarDoacao(valor: string) {
     }catch(error) {
         mostrarResultado('/sinal-errado.webp', 'Erro', 'Erro ao enviar doação', 'erro', 'doacao', 3000)
     }
+    setTextoBtn('Doar')
 }
 
 export { enviarDoacao }

@@ -14,6 +14,7 @@ export default function Login() {
     const [usuario, setUsuario] = useState('')
     const [senha, setSenha] = useState('')
     const [desativado, setDesativado] = useState(true)
+    const [textoBtn, setTextoBtn] = useState('Entrar')
     const rota = useRouter()
 
     function colocaValor(e:any, tipo:string) {
@@ -34,7 +35,9 @@ export default function Login() {
 
 
     async function logaUsuario(usuario: string, senha: string) {
+        setTextoBtn('aguarde...')
         const resposta: any = await enviarLogin(usuario, senha)
+        setTextoBtn('Entrar')
         if (resposta == "Usuário logado") {
             mostrarResultado('/sinal-certo.webp','sinal certo', 'Login efetuado com sucesso', 'sucesso', 'login', 3000)
             setTimeout(() => {
@@ -50,13 +53,13 @@ export default function Login() {
         <section className="login-container">
             <form className="login-form">
                 <h1>Login</h1>
-                <h2 className="subtitulo">Logar com a sua conta</h2>
+                <h2 className="subtitulo">Entrar na sua conta</h2>
                 <div className="credenciais">
                     <input onKeyDown={(e) => {validaCampoTexto(e)}} onKeyUp={(e) => {colocaValor(e, 'usuario')}} placeholder="Usuário" id="usuario" type="text" />
                     <input onKeyDown={(e) => {validaCampoTexto(e)}} onKeyUp={(e) => {colocaValor(e, 'senha')}} placeholder="senha" name="senha" id="senha" type="password" />
                 </div>              
             </form>
-            <BotaoCadastro texto='Entrar' desativado={desativado} onClick={() => {logaUsuario(usuario, senha)}} />
+            <BotaoCadastro texto={textoBtn} desativado={desativado} onClick={() => {logaUsuario(usuario, senha)}} />
             <span className='novo--usuario'>Novo por aqui ? faça o seu cadastro clicando <Link href={'/cadastro'}>aqui</Link></span>
         </section>
     )

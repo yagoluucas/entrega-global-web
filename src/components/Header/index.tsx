@@ -7,6 +7,7 @@ import './navegacao-mobile.css'
 import { useRef, useEffect, useState } from "react";
 import { usePathname } from 'next/navigation'
 
+// Header da nossa aplicação que está disponível em todas as páginas
 export default function Header(){
     const path = usePathname();
     const [tituloEntrar, setTituloEntrar] = useState('Entrar');

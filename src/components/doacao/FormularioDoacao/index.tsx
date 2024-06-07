@@ -11,6 +11,7 @@ export default function FormularioDoacao() {
 
     const [valor, setValor] = useState('')
     const [desativado, setDesativado] = useState(true)
+    const [textoBtn, setTextoBtn] = useState('Doar')
 
     useEffect(() => {
         if (parseFloat(valor) >= 1){
@@ -36,7 +37,7 @@ export default function FormularioDoacao() {
                     <input onChange={(e) => {validaCampoNumero(e)}} onClick={(e) => {colocaValor(e)}} onKeyUp={(e) => {colocaValor(e)}} type="number" min={1} placeholder="R$00,00" id="valor" name="valor" required />
 
                 </form>
-                <button onClick={() => {enviarDoacao(valor)}} disabled={desativado}>Doar</button>
+                <button onClick={() => {enviarDoacao(valor, setTextoBtn)}} disabled={desativado}>{textoBtn}</button>
             </div>
             <p>Ao continuar, você concorda com os <Link href={'/termos'}>Termos de Uso</Link></p>
         </section>
