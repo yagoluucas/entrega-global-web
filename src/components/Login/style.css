@@ -64,3 +64,10 @@ main section.login-container span a {
     color: #0173ed;
     text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+    main section.login-container {
+        width: 90%;
+    }
+    
+}

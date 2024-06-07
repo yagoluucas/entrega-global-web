@@ -16,6 +16,7 @@ form.form--cadastro {
     display: flex;
     flex-direction: column;
 }
+
 main section.cadastro h1 {
     color: #ffffff;
     font-weight: 500;
@@ -43,14 +44,14 @@ main form.form--cadastro input {
         rgba(0, 0, 0, 0.1) 0px -4.9375rem 2.5rem 0px inset, rgba(0, 0, 0, 0.06) 0px 0.125rem 0.0625rem,
         rgba(0, 0, 0, 0.09) 0px 0.25rem 0.125rem, rgba(0, 0, 0, 0.09) 0px 0.5rem 0.25rem,
         rgba(0, 0, 0, 0.09) 0px 1rem 0.5rem, rgba(0, 0, 0, 0.09) 0px 2rem 1rem;
-    margin-bottom: 1rem;    
+    margin-bottom: 1rem;
 }
 
 main section.cadastro button {
     display: block;
     margin-bottom: 1rem;
     padding: 0.7rem 1rem;
-    background: #0173ed ;
+    background: #0173ed;
     font-size: 1rem;
     border-radius: 0.5rem;
 }
@@ -62,4 +63,10 @@ main section.cadastro span {
 
 main section.cadastro span a {
     color: #0173ed;
+}
+
+@media screen and (max-width: 768px) {
+    main section.cadastro {
+        width: 90%;
+    }
 }
