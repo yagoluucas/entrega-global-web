@@ -8,7 +8,6 @@ import { useRef, useEffect, useState } from "react";
 import { usePathname } from 'next/navigation'
 
 export default function Header(){
-
     const path = usePathname();
     const [tituloEntrar, setTituloEntrar] = useState('Entrar');
     const navRef = useRef<HTMLElement>(null);
@@ -26,9 +25,6 @@ export default function Header(){
     useEffect(() => {
         navRef.current?.classList.remove('mostrar');
         navRef.current?.classList.add('esconder');
-    }, [path])
-
-    useEffect(() => {
         if (localStorage.getItem('usuario') !== null) {
             setTituloEntrar('Conta');
         }
